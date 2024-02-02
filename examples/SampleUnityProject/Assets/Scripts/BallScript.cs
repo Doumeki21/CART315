@@ -10,7 +10,7 @@ public class BallScript : MonoBehaviour
     private Rigidbody2D rb;
     public float ballSpeed;
     public float maxSpeed = 10f;
-    public float minSpeed = 2f;
+    public float minSpeed = 5f;
 
     public AudioSource scoreSound, blip;
     public Text leftScore, rightScore;
