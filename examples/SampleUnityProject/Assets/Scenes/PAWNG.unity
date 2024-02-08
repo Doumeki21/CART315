@@ -485,10 +485,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 437125667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c8ece72b0242140b9a9d2056bb26c5, type: 3}
+  m_Script: {fileID: 11500000, guid: ead6c0c476774a04bbede2c74db31f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleSpeed: 0.15
+  paddleSpeed: 0.2
   topWall: 3.9
   bottomWall: -3.9
   upKey: 119
@@ -1158,7 +1158,7 @@ GameObject:
   - component: {fileID: 1494530929}
   - component: {fileID: 1494530933}
   - component: {fileID: 1494530932}
-  - component: {fileID: 1494530931}
+  - component: {fileID: 1494530934}
   m_Layer: 0
   m_Name: rightPaddle
   m_TagString: Untagged
@@ -1233,23 +1233,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1494530931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494530928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c8ece72b0242140b9a9d2056bb26c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paddleSpeed: 0.15
-  topWall: 3.9
-  bottomWall: -3.9
-  upKey: 111
-  downKey: 107
 --- !u!50 &1494530932
 Rigidbody2D:
   serializedVersion: 4
@@ -1297,6 +1280,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1494530934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494530928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead6c0c476774a04bbede2c74db31f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddleSpeed: 0.2
+  topWall: 3.9
+  bottomWall: -3.9
+  upKey: 111
+  downKey: 107
 --- !u!1 &1529421831
 GameObject:
   m_ObjectHideFlags: 0
