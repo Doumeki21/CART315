@@ -26,7 +26,6 @@ public class BreakoutBall : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        lives = 4;
         Reset();
     }
 
@@ -79,7 +78,7 @@ public class BreakoutBall : MonoBehaviour
         }
 
         if (other.gameObject.tag == "Reset") {
-            lives -= 1;
+            GameManager.S.loseLife();
             Reset();
         }
     
