@@ -578,10 +578,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 437125667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1939a1e95462ea468bc2c094d0e1d07, type: 3}
+  m_Script: {fileID: 11500000, guid: c9eac5c891a943d49938c12563b523fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleSpeed: 0.2
+  paddleSpeed: 0.1
   leftWall: -10
   rightWall: 10
   leftKey: 122
@@ -1466,11 +1466,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a920d53779c12a4489b3573789ecb167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Brick: {fileID: 8212270071925710864, guid: cd348c9d18c29ba438cb116f3d8b4a48, type: 3}
+  Brick: {fileID: 642885229518545834, guid: f15784e4c23722c4791e29866ba02823, type: 3}
   rows: 4
   columns: 5
-  brickSpacing_h: 0
-  brickSpacing_v: 0
+  brickSpacing_h: 2.5
+  brickSpacing_v: 1
 --- !u!4 &2009638711
 Transform:
   m_ObjectHideFlags: 0
@@ -1479,9 +1479,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009638709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 5, y: 5, z: 2}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
