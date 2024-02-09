@@ -6,7 +6,7 @@ public class BreakoutPaddle : MonoBehaviour
 {
     private float xPos;
     public float paddleSpeed = 0.2f;
-    public float leftKey, rightKey;
+    public float leftWall, rightWall;
 
     public KeyCode leftKey, rightKey;
     
@@ -33,6 +33,6 @@ public class BreakoutPaddle : MonoBehaviour
             }
         }
 
-        transform.localPosition = new Vector3(transform.position.x, yPos, 0);
+        transform.localPosition = new Vector3(xPos, transform.position.y, 0);
     }
 }
