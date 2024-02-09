@@ -31,4 +31,8 @@ public class GameManager : MonoBehaviour
     public void loseLife() {
         lives -= 1;
     }
+
+    public void AddPoint(int numPoints) {
+        points += numPoints;
+    }
 }
