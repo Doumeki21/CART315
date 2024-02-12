@@ -64,7 +64,7 @@ public class BreakoutBall : MonoBehaviour
         {
             // make pitch lower
             blip.pitch = 0.75f;
-            // blip.Play();
+            blip.Play();
             SpeedCheck();
         }
 
@@ -73,7 +73,7 @@ public class BreakoutBall : MonoBehaviour
         {
             // make pitch higher
             blip.pitch = 1f;
-            // blip.Play();
+            blip.Play();
             SpeedCheck();
         }
 

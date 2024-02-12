@@ -1187,7 +1187,7 @@ MonoBehaviour:
   maxSpeed: 10
   minSpeed: 5
   scoreSound: {fileID: 0}
-  blip: {fileID: 0}
+  blip: {fileID: 11819853}
   leftScore: {fileID: 0}
   rightScore: {fileID: 0}
   leftPlayerScore: 0
