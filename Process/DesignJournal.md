@@ -10,16 +10,15 @@ Okami was one of my favorite games on the Wii console when it first came out. It
   - As a bonus, you can even sprout trees to stun enemies or pee on them to receive extra rewards. The incorporation of humor adds to the charm of Okami!
 - Another interesting point is that most of the time, the difficulty of the game isn't about trying to survive, but about getting more rewards by ridding enemies the quickest and most **skillfully** as possible. 
 
-![Slicing brush technique](https://www.anuflora.com/game/wp-content/uploads/game/2021/01/image-18.png | width=100)
-![Drawing a moon in daylight](https://www.gamereactor.eu/media/67/okamihd_2306713b.jpg | width=100)
-
-![Blossom enemy](https://cdn.mos.cms.futurecdn.net/256c3d74c0f580d3428aa6b0cbb2b901-970-80.jpg.webp | width=100)
+![Slicing brush technique](https://www.anuflora.com/game/wp-content/uploads/game/2021/01/image-18.png)
+![Drawing a moon in daylight](images/MoonBrush.jpg)
+![Blossom enemy](https://cdn.mos.cms.futurecdn.net/256c3d74c0f580d3428aa6b0cbb2b901-970-80.jpg.webp)
 
 ## Flaws
  - Due to the amount of possible brush techniques (13+), some similarities of brush techniques should be avoided to cause frustration in gameplay when the system misinterprets the brush strokes. For example, Veil of Mist to slow time and Whirlwind to create a tornado.
 
-![Slowing down the spider from coming down](https://static.wikia.nocookie.net/okami/images/5/54/Veil_of_Mist_Scroll.png/revision/latest/scale-to-width-down/1000?cb=20210106141411 | width=100)
-![Creation of a tornado](https://static.wikia.nocookie.net/okami/images/3/34/Whirlwind_Scroll.png/revision/latest/scale-to-width-down/1000?cb=20210106144547 | width=100)
+![Slowing down the spider from coming down](images/VeilMist.png)
+![Creation of a tornado](images/Whirlwind.png)
 
 ## For Inspiration...
 - To incorporate some of these ideas in my future projects, I'd like to consider variety in gameplay. For example, I could be matching different actions to each of their corresponding opponents' colors or introduce different characters that have different playing styles. (And if I do have time, I'd like to think a bit more about the choice of visual narrative.)
