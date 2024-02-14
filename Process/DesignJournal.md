@@ -15,11 +15,11 @@ Okami was one of my favorite games on the Wii console when it first came out. It
 ![Blossom enemy](https://cdn.mos.cms.futurecdn.net/256c3d74c0f580d3428aa6b0cbb2b901-970-80.jpg.webp)
 
 ## Flaws
- - Due to the amount of brush techniques there are (13+), similarities in stroke design should be avoided, because sometimes the system misinterprets the brush strokes, which can cause frustration. For example, both Veil of Mist and Whirlwind requires the player to draw horizontal lines to activate the techniques, but one slows down time while the other creates a tornado.
+ - Due to the amount of brush techniques there are (13+), similarities in stroke design should be avoided. For example, both "Veil of Mist" and "Whirlwind" requires the player to draw horizontal lines to activate the techniques, but one slows down time while the other creates a tornado. When the system misinterprets these brush strokes, it can cause lots of frustration- especially during a heated battle.
 
 ![Slowing down the spider from coming down](images/VeilMist.png)
 ![Creation of a tornado](images/Whirlwind.png)
 
 ## For Inspiration...
-- To incorporate some of these ideas in my future projects, I'd like to consider variety in gameplay. For example, I could be matching different actions to each of their corresponding opponents' colors or introduce different characters that have different playing styles. (If I do have time, I'd like to think a bit more about the choice of visual narrative.)
+- To incorporate some of these ideas in my future projects, I'd like to consider variety in gameplay. For example, I could be matching different actions to each of their corresponding opponents' colors or introduce different characters that have different playing styles. (If I do have time, I'd like to think a bit more about the choice of visual narrative as well.)
 
