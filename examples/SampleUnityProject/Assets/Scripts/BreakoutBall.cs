@@ -20,7 +20,7 @@ public class BreakoutBall : MonoBehaviour
     public int lives;
 
     private int[] dirOptions = {-1, 1};
-    private int hDir, vDir;
+    private int hDir;
 
     // Start is called before the first frame update
     void Start()
@@ -31,28 +31,29 @@ public class BreakoutBall : MonoBehaviour
 
 //if SPACE is pressed while the game isn't running, THEN launch the ball.
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space) && !gameRunning) StartCoroutine(Launch());
+        if(Input.GetKeyDown(KeyCode.Space) && !gameRunning) StartCoroutine("Launch");
     }
 
     private IEnumerator Launch() {
         gameRunning = true;
-        yield return new WaitForSeconds(1.5f);
+        //yield return new WaitForSeconds(1.5f);
 
         // Figure out directions
         hDir = dirOptions[Random.Range(0, dirOptions.Length)];
-        vDir = dirOptions[Random.Range(0, dirOptions.Length)];
+       // vDir = dirOptions[Random.Range(0, dirOptions.Length)];
 
         // Add a horizontal force
-        rb.AddForce(transform.right * ballSpeed * hDir); // Randomly go Left or Right
+        rb.AddForce((Vector2)(transform.right * ballSpeed * hDir)); // Randomly go Left or Right
         // Add a vertical force
-        rb.AddForce(transform.up * ballSpeed * vDir); // Randomly go Up or Down
+        rb.AddForce((Vector2)(transform.up * -1f)); // Randomly go Up or Down
+        yield return null;
     }
 
     private void Reset() {
         rb.velocity = Vector2.zero;
         ballSpeed = 2;
         transform.position = new Vector2(0, -2);
-        StartCoroutine("Launch");
+        //StartCoroutine("Launch"); //starts launching automatically.
         gameRunning = false;
     }
 
