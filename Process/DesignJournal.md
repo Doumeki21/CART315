@@ -7,7 +7,7 @@ Okami was one of my favorite games on the Wii console when it first came out. It
 ## Interesting Points
 - The brush mechanic
   - Amaterasu's tail is shaped like a brush which you can use to **draw** attacks on enemies. As a young teen, being able to manipulate my surroundings always fascinated me. You could draw a sun at night to create day, slice enemies with a stroke of a brush, slow time, or break through walls by dropping bombs. Even though you can "punch and kick" like in typical combat, the celestial brush provides for a dynamic play, both for combat and solving puzzles.
-  - As a bonus, you can even sprout trees to stun enemies or pee on them to receive extra rewards. The incorporation of humor adds to the charm of Okami!
+  - As a bonus, you can even sprout trees to stun enemies or pee on them to receive extra rewards. The incorporation of humor adds to the charm of Okami as vwell!
 - Another interesting point is that most of the time, the difficulty of the game isn't about trying to survive, but about getting more rewards by ridding enemies the quickest and most **skillfully** as possible. 
 
 ![Slicing brush technique](https://www.anuflora.com/game/wp-content/uploads/game/2021/01/image-18.png)
@@ -15,7 +15,7 @@ Okami was one of my favorite games on the Wii console when it first came out. It
 ![Blossom enemy](https://cdn.mos.cms.futurecdn.net/256c3d74c0f580d3428aa6b0cbb2b901-970-80.jpg.webp)
 
 ## Flaws
- - Due to the amount of brush techniques, (there are 13+), similarities in stroke design should be avoided. For example, both "Veil of Mist" and "Whirlwind" require the player to draw horizontal lines to activate the techniques, but one slows down time while the other creates a tornado. When the system misinterprets these brush strokes, it can cause lots of frustration- especially during a heated battle.
+ - Due to the amount of brush techniques to be learned in the game (about 13+), similarities in stroke design should be avoided. For example, both "Veil of Mist" and "Whirlwind" require the player to draw horizontal lines to activate the techniques, but one slows down time while the other creates a tornado. When the system misinterprets these brush strokes, it can cause lots of frustration- especially during a heated battle.
 
 ![Slowing down the spider from coming down](images/VeilMist.png)
 ![Creation of a tornado](images/Whirlwind.png)
