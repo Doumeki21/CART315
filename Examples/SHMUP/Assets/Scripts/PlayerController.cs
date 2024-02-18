@@ -43,6 +43,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        transform.localPosition = new Vector3(transform.position.x, yPos, 0);
+        transform.localPosition = new Vector3(xPos, yPos, 0);
     }
 }
