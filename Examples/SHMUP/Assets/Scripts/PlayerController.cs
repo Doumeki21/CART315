@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //an array of gun types recognized by the player.
+    private Gun[] guns;
+    
     private float yPos, xPos;
     public float playerSpeed = 1.0f;
     public float topWall, bottomWall, leftWall, rightWall;
 
     public KeyCode upKey, downKey, leftKey, rightKey;
+    
+    private bool shoot;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Gets access to all the gun types in all the child game obj.
+        guns = transform.GetComponentsInChildren<Gun>();
     }
 
     // Update is called once per frame
@@ -42,7 +48,16 @@ public class PlayerController : MonoBehaviour
                 xPos += playerSpeed;
             }
         }
-
         transform.localPosition = new Vector3(xPos, yPos, 0);
+        
+        shoot = Input.GetKeyDown(KeyCode.P);
+        if (shoot)
+        {
+            // shoot = false;
+            foreach(Gun gun in guns)
+            {
+                gun.Shoot();
+            }
+        }
     }
 }
