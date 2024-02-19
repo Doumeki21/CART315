@@ -27,6 +27,6 @@ public class BulletScript : MonoBehaviour
             enemy.TakeDamage(damage);
         }
         Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(gameObject);
+        Destroy(gameObject,3);
     }
 }
