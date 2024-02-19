@@ -936,7 +936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a3471eafa21b04293ab646d45d0f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 1
+  playerSpeed: 5
   topWall: 300
   bottomWall: 15
   leftWall: 16
