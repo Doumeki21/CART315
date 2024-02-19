@@ -21,7 +21,7 @@ public class GunScript : MonoBehaviour
 
     public void Shoot()
     {
-        //Creates a copy of this bullet at the gameobject 
-        GameObject go = Instantiate(bullet.gameObject, transform.position, Quaternion.identity);
+        //Creates a copy of this bullet at the gameobject position
+        object go = Instantiate(bullet.gameObject, transform.position, Quaternion.identity);
     }
 }

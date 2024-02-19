@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
 {
 
     public Vector2 direction = new Vector2(1,0);  //moves the bullet to the right
-    public float bulletSpeed = 20f;
+    public float bulletSpeed = 200f;
     
     public Vector2 velocity;
     
