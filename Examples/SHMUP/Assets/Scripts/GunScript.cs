@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunScript : MonoBehaviour
 {
     //What type of bullet this gun shoots
-    public Bullet bullet;
+    // public Bullet bullet;
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,6 @@ public class GunScript : MonoBehaviour
     public void Shoot()
     {
         //Creates a copy of this bullet at the gameobject position
-        object go = Instantiate(bullet.gameObject, transform.position, Quaternion.identity);
+        // object go = Instantiate(bullet.gameObject, transform.position, Quaternion.identity);
     }
 }
