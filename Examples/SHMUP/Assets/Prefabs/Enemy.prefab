@@ -162,5 +162,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d120f720b72a67e458817b9337616fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveSize: 10
-  waveLength: 8
+  amplitude: 5

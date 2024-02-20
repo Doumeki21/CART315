@@ -9,6 +9,9 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     
+    public float fireRate = 2F; // 2seconds wait
+    private float nextFire = 0.0F;
+    
     // public int beamDamage = 80;
     // public GameObject impactBeamEffect;
     // public LineRenderer lineRenderer;
@@ -17,8 +20,15 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         //go to edit >> project settings >> input manager (alt positive button).
-        if (Input.GetButtonDown("Fire1"))
-        {
+        // if (Input.GetKey("n"))
+        // {
+        //     Shoot();
+        // }
+        
+        //https://discussions.unity.com/t/delay-between-bullet-shot-with-getkey/191520
+        if(Input.GetKey("n") && Time.time > nextFire ) {
+
+            nextFire = Time.time + fireRate;
             Shoot();
         }
 
