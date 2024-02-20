@@ -8,7 +8,19 @@ public class Enemy : MonoBehaviour
     public int health = 100;
     // public GameObject deathEffect;
     public Rigidbody2D rb;
-    public float enemySpeed = 10;
+    public float enemySpeed = 100;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     
     public void TakeDamage(int damage)
     {
@@ -18,7 +30,6 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
-
     void Die()
     {
         // Quaternion.identity basically means no rotation!!
@@ -26,16 +37,14 @@ public class Enemy : MonoBehaviour
         // Instantiate(deathEffect, transform.position, Quaternion.identity);
         
     }
-    // Start is called before the first frame update
-    void Start()
+
+    private void FixedUpdate()
     {
         //enemy moves from right to left.
         rb.velocity = -1 * transform.right * enemySpeed;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (transform.position.x < -90)
+        {
+            Destroy(gameObject);
+        }
     }
 }
