@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2584076442770689045}
   - component: {fileID: 2584076442770689033}
   - component: {fileID: 2584076442770689032}
-  - component: {fileID: 3090620330484903968}
+  - component: {fileID: 3423271800684165373}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -150,7 +150,7 @@ MonoBehaviour:
   health: 100
   rb: {fileID: 2584076442770689033}
   enemySpeed: 100
---- !u!114 &3090620330484903968
+--- !u!114 &3423271800684165373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,5 +162,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d120f720b72a67e458817b9337616fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveSize: 5
-  waveLength: 5
+  waveSize: 10
+  waveLength: 8
