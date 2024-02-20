@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     // public GameObject deathEffect;
     public Rigidbody2D rb;
     public float enemySpeed = 100;
+
+    bool canBeDestroyed = false;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
     
     public void TakeDamage(int damage)
@@ -40,11 +42,23 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //MOVEMENT
         //enemy moves from right to left.
         rb.velocity = -1 * transform.right * enemySpeed;
         if (transform.position.x < -90)
         {
             Destroy(gameObject);
+        }
+        
+        if (transform.position.x < 730)
+        {
+            canBeDestroyed = true;
+        }
+        //if the enemy can't be destroyed-
+        if (!canBeDestroyed)
+        {
+            //return >> aka. don't perform this operation!
+            return;
         }
     }
 }

@@ -236,6 +236,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3423271800684165373, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
+      propertyPath: inverted
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1 &93106398
@@ -262,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93106398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 819, y: 63, z: 0}
+  m_LocalPosition: {x: 1286, y: 63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -448,6 +452,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584076442770689047, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423271800684165373, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
+      propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -737,6 +745,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584076442770689047, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423271800684165373, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
+      propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1381,6 +1393,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584076442770689047, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423271800684165373, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
+      propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
