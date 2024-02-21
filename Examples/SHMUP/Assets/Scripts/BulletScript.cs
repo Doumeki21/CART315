@@ -24,26 +24,30 @@ public class BulletScript : MonoBehaviour
         Debug.Log(gameObject.name);
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         //if we actually find an enemy component,
-        if (enemy != null && enemy.transform.position.x < 730)
+        if (enemy != null && hitInfo.transform.position.x < 730)
         {
-            if (gameObject.name != "EnemyBullet")
+            if (gameObject.tag == "EnemyBullet" && hitInfo.name == "EnemyType2")
             {
                 Debug.Log("enemy bullet");
             }
-            //Take damage (can input a damage value here or in the public.)
-            enemy.TakeDamage(damage);
-            // Instantiate(impactEffect, transform.position, transform.rotation);
-            Destroy(gameObject);
+            else
+            {
+                //Take damage (can input a damage value here or in the public.)
+                enemy.TakeDamage(damage);
+                // Instantiate(impactEffect, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
+            
         } 
-        else
-        {
-            Destroy(gameObject, 2);
-        }
-        
-        if (hitInfo.gameObject.tag == "EnemyBullet")
-        {
-            enemy.TakeDamage(0);
-        }
+        // else
+        // {
+        //     Destroy(gameObject, 2);
+        // }
+        //
+        // if (hitInfo.gameObject.tag == "EnemyBullet")
+        // {
+        //     enemy.TakeDamage(0);
+        // }
         
     }
 }
