@@ -1441,7 +1441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9143367588767187373, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   fireRate: 2
   autoShoot: 1
   shootIntervalSeconds: 0.2
-  shootDelaySeconds: 1
+  shootDelaySeconds: 2
   shootTimer: 0
   delayTimer: 0
 --- !u!114 &1593339032
