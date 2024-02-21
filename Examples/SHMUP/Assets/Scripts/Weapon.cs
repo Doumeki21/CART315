@@ -32,7 +32,6 @@ public class Weapon : MonoBehaviour
         //https://discussions.unity.com/t/delay-between-bullet-shot-with-getkey/191520
         if (Input.GetKey("n") && Time.time > nextFire)
         {
-
             nextFire = Time.time + fireRate;
             Shoot();
         }

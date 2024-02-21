@@ -21,10 +21,20 @@ public class Enemy : MonoBehaviour
     {
         
     }
-    
+
+    void OnCollisionEnter(Collision hitInfo)
+    {
+        //enemy checks to see if the bullet comes from their own.
+        if (hitInfo.gameObject.tag == "EnemyBullet")
+        {
+            health -= 0;
+        }
+    }
+
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        health -= damage;  
+    
         if (health <= 0)
         {
             Die();
