@@ -9,6 +9,8 @@ public class BulletScript : MonoBehaviour
     public int damage = 40;
     public Rigidbody2D rb;
     // public GameObject impactEffect;
+
+    public bool isEnemy = false;
         
     // Use this for initialization
     void Start()

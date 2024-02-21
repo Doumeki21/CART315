@@ -11,10 +11,12 @@ public class Weapon : MonoBehaviour
     
     public float fireRate = 2F; // 2seconds wait
     private float nextFire = 0.0F;
-    
-    // public int beamDamage = 80;
-    // public GameObject impactBeamEffect;
-    // public LineRenderer lineRenderer;
+
+    public bool autoShoot = false;
+    public float shootIntervalSeconds = 0.2f;
+    public float shootDelaySeconds = 1.0f;
+    public float shootTimer = 0f;
+    public float delayTimer = 0f;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +33,27 @@ public class Weapon : MonoBehaviour
             nextFire = Time.time + fireRate;
             Shoot();
         }
+
+        if (autoShoot)
+        {
+            if (delayTimer >= shootDelaySeconds) //frequency of when the enemies shoots.
+            {
+                if (shootTimer >= shootIntervalSeconds) //timing bullets.
+                {
+                    Shoot();
+                    shootTimer = 0; // reset timer.
+                }
+                else
+                {
+                    shootTimer += Time.deltaTime;
+                }
+            }
+            else
+            {
+                //keep incrementing the time.
+                delayTimer += Time.deltaTime;
+            }
+        }
     }
 
     void Shoot()
@@ -40,35 +63,4 @@ public class Weapon : MonoBehaviour
         //Instantiate(what, where, rotation);
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
-
-    // IEnumerator ShootBeam()
-    // {
-    //    RaycastHit2D hitInfo = Physics2D.Raycast(firePoint.position, firePoint.right);
-    //    
-    //    if (hitInfo)
-    //    {
-    //        Enemy enemy = hitInfo.transform.GetComponent<Enemy>();
-    //        if (enemy != null)
-    //        {
-    //            enemy.TakeDamage(beamDamage);
-    //        }
-    //        Instantiate(impactBeamEffect, hitInfo.point, Quaternion.identity);
-    //        
-    //        LineRenderer.SetPosition(0, firePoint.position);
-    //        LineRenderer.SetPosition(1, hitInfo.point);
-    //    }
-    //    else
-    //    {
-    //        //if the line doesn't hit anything, it continues infinitely in space.
-    //        LineRenderer.SetPosition(0, firePoint.position);
-    //        LineRenderer.SetPosition(1, firePoint.position + firePoint.right * 100); //take the starting position and shifting it 100 units fold.
-    //    }
-    //    
-    //    //to make this part work, this (void) function needs to be a coroutine
-    //    lineRenderer.enabled = true;
-    //    //wait 1 frame 
-    //    yield return 0;
-    //
-    //    lineRenderer.enabled = false;
-    // }
 }

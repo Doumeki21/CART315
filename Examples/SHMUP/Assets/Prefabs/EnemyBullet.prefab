@@ -139,3 +139,4 @@ MonoBehaviour:
   speed: 500
   damage: 40
   rb: {fileID: 4256807498650142331}
+  isEnemy: 1
