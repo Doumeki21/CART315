@@ -240,7 +240,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1 &67274742
 GameObject:
@@ -367,7 +368,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1001 &307542790
 PrefabInstance:
@@ -428,7 +430,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1001 &333582944
 PrefabInstance:
@@ -489,7 +492,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1 &382099990
 GameObject:
@@ -782,7 +786,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1001 &842510613
 PrefabInstance:
@@ -839,11 +844,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3423271800684165373, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
-      propertyPath: inverted
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1 &853216553
 GameObject:
@@ -1391,7 +1393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130020792765185009, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 681
+      value: 1286
       objectReference: {fileID: 0}
     - target: {fileID: 130020792765185009, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1436,6 +1438,10 @@ PrefabInstance:
     - target: {fileID: 9143367588767187373, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
       propertyPath: m_Name
       value: EnemyType2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143367588767187373, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4222b216412bb6f44ac3c0c0b59c1834, type: 3}
@@ -1511,6 +1517,7 @@ MonoBehaviour:
   firePoint: {fileID: 67274743}
   bulletPrefab: {fileID: 4394550435123373117, guid: b328edcf55aa6e44eb8ac41c25dbb102, type: 3}
   fireRate: 2
+  autoShoot: 1
   shootIntervalSeconds: 0.2
   shootDelaySeconds: 1
   shootTimer: 0
@@ -1528,7 +1535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  rb: {fileID: 0}
+  rb: {fileID: 1593339028}
   enemySpeed: 100
 --- !u!4 &1826690712 stripped
 Transform:
@@ -1594,7 +1601,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1001 &1983713848
 PrefabInstance:
@@ -1655,7 +1663,8 @@ PrefabInstance:
       propertyPath: inverted
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069237968012296355, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e31f78f9bb4d0074a9bdeb8bf4130139, type: 3}
 --- !u!1 &2007463639
 GameObject:
@@ -1932,6 +1941,7 @@ MonoBehaviour:
   firePoint: {fileID: 1434106839}
   bulletPrefab: {fileID: 4394550435123373117, guid: 43e68ede6ad9b3e44bd9453b94412a57, type: 3}
   fireRate: 0.2
+  autoShoot: 0
   shootIntervalSeconds: 0.2
   shootDelaySeconds: 1
   shootTimer: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -5,16 +6,17 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    //Weapon code borrowed from Brackey's "2D shooting in Unity tutorial".
+    //Most of this code borrowed from Brackey's "2D shooting in Unity tutorial".
     public Transform firePoint;
     public GameObject bulletPrefab;
     
     public float fireRate = 2F; // 2seconds wait
     private float nextFire = 0.0F;
 
+    //https://www.youtube.com/watch?v=C7JRl9QoxIo&t=291s&ab_channel=superjustin5000
     public bool autoShoot = false;
-    public float shootIntervalSeconds = 0.2f;
-    public float shootDelaySeconds = 1.0f;
+    public float shootIntervalSeconds = 0.1f;
+    public float shootDelaySeconds = 2.0f;
     public float shootTimer = 0f;
     public float delayTimer = 0f;
 
@@ -26,34 +28,35 @@ public class Weapon : MonoBehaviour
         // {
         //     Shoot();
         // }
-        
+
         //https://discussions.unity.com/t/delay-between-bullet-shot-with-getkey/191520
-        if(Input.GetKey("n") && Time.time > nextFire ) {
+        if (Input.GetKey("n") && Time.time > nextFire)
+        {
 
             nextFire = Time.time + fireRate;
             Shoot();
         }
-
-        if (autoShoot)
-        {
-            if (delayTimer >= shootDelaySeconds) //frequency of when the enemies shoots.
+        
+            if (autoShoot)
             {
-                if (shootTimer >= shootIntervalSeconds) //timing bullets.
+                if (delayTimer >= shootDelaySeconds)
                 {
-                    Shoot();
-                    shootTimer = 0; // reset timer.
+                    if (shootTimer >= shootIntervalSeconds)
+                    {
+                        Shoot();
+                        shootTimer = 0; //reset timer.
+                    }
+                    else
+                    {
+                        //keep incrementing the time.
+                        shootTimer += Time.deltaTime;
+                    }
                 }
                 else
                 {
-                    shootTimer += Time.deltaTime;
+                    delayTimer += Time.deltaTime;
                 }
             }
-            else
-            {
-                //keep incrementing the time.
-                delayTimer += Time.deltaTime;
-            }
-        }
     }
 
     void Shoot()
