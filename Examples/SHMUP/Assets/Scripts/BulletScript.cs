@@ -23,16 +23,22 @@ public class BulletScript : MonoBehaviour
     {
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         //if we actually find an enemy component,
-        if (enemy != null)
+        if (enemy != null && enemy.transform.position.x < 730)
         {
             //Take damage (can input a damage value here or in the public.)
             enemy.TakeDamage(damage);
             // Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(gameObject);
-        }
+        } 
         else
         {
             Destroy(gameObject, 2);
         }
+        
+        if (hitInfo.gameObject.tag == "EnemyBullet")
+        {
+            enemy.TakeDamage(0);
+        }
+        
     }
 }
