@@ -21,10 +21,15 @@ public class BulletScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        Debug.Log(gameObject.name);
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         //if we actually find an enemy component,
         if (enemy != null && enemy.transform.position.x < 730)
         {
+            if (gameObject.name != "EnemyBullet")
+            {
+                Debug.Log("enemy bullet");
+            }
             //Take damage (can input a damage value here or in the public.)
             enemy.TakeDamage(damage);
             // Instantiate(impactEffect, transform.position, transform.rotation);
@@ -35,10 +40,10 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject, 2);
         }
         
-        // if (hitInfo.gameObject.tag == "EnemyBullet")
-        // {
-        //     enemy.TakeDamage(0);
-        // }
+        if (hitInfo.gameObject.tag == "EnemyBullet")
+        {
+            enemy.TakeDamage(0);
+        }
         
     }
 }
