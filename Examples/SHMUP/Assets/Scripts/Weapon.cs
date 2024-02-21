@@ -31,11 +31,6 @@ public class Weapon : MonoBehaviour
             nextFire = Time.time + fireRate;
             Shoot();
         }
-
-        // if (Input.GetButtonDown("Fire2"))
-        // {
-        //     StartCoroutine(ShootBeam());
-        // }
     }
 
     void Shoot()
