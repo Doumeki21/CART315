@@ -11,12 +11,17 @@ public class BulletScript : MonoBehaviour
     // public GameObject impactEffect;
 
     public bool isEnemy = false;
+    
+    public GameObject manager;
         
     // Use this for initialization
     void Start()
     {
         //velocity is the current speed on the axes.
         rb.velocity = transform.right * speed;
+        manager = GameObject.Find("GameManager");
+
+        Debug.Log(manager.GetComponent<ScoreScript>().score);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

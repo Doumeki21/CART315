@@ -1518,8 +1518,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4394550435123373117, guid: b328edcf55aa6e44eb8ac41c25dbb102, type: 3}
   fireRate: 2
   autoShoot: 1
-  shootIntervalSeconds: 0.2
-  shootDelaySeconds: 2
+  shootIntervalSeconds: 1
+  shootDelaySeconds: 5
   shootTimer: 0
   delayTimer: 0
 --- !u!114 &1593339032
