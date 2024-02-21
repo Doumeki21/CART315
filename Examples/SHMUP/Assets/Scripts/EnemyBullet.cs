@@ -21,7 +21,7 @@ public class EnemyBullet : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider hitInfo)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
         //enemies that get hit by enemy bullets shouldn't take dmg.
         Enemy enemy = hitInfo.GetComponent<Enemy>();

@@ -35,10 +35,10 @@ public class BulletScript : MonoBehaviour
             Destroy(gameObject, 2);
         }
         
-        if (hitInfo.gameObject.tag == "EnemyBullet")
-        {
-            enemy.TakeDamage(0);
-        }
+        // if (hitInfo.gameObject.tag == "EnemyBullet")
+        // {
+        //     enemy.TakeDamage(0);
+        // }
         
     }
 }
