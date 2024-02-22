@@ -15,8 +15,8 @@ public class Weapon : MonoBehaviour
 
     //https://www.youtube.com/watch?v=C7JRl9QoxIo&t=291s&ab_channel=superjustin5000
     public bool autoShoot = false;
-    public float shootIntervalSeconds = 0.1f; //
-    public float shootDelaySeconds = 2.0f;
+    public float shootIntervalSeconds = 2f; //
+    public float shootDelaySeconds = 5f;
     public float shootTimer = 0f;
     public float delayTimer = 0f;
 
