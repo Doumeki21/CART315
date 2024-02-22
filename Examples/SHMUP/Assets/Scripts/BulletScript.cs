@@ -43,11 +43,10 @@ public class BulletScript : MonoBehaviour
             if(gameObject.tag == "EnemyBullet" && hitInfo.tag =="Enemy"){
                  Debug.Log("enemy bullet");
             }
-            
-          //if enemy bullet hits a hexagon DO NOTHING
-            //  else if (gameObject.tag == "EnemyBullet" && hitInfo.tag =="Enemy"){
-            //     Debug.Log("hex enemy was hit");
-            // }
+          //if enemy bullet hits player's bullet DO NOTHING
+             else if (gameObject.tag == "EnemyBullet" && gameObject.tag =="Bullet"){
+                
+            }
             // if ENEMY BULLET hits none of the above - destroy after 2 secs
             else if(gameObject.tag == "EnemyBullet"){
                  Destroy(gameObject,15);
