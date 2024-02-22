@@ -31,7 +31,7 @@ public class ScoreScript : MonoBehaviour
         }
     }
 
-    //update score is reusable here to track when bullets hit enemies. 
+    //update score is reusable here to track when enemies are killed. 
     public void UpdateScore()
     {
         score += 1;
