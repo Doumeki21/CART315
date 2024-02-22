@@ -32,14 +32,14 @@ public class LivesScript : MonoBehaviour
     // }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && other.tag == "Enemy")
-        {
-            UpdateLife();
-        }
-        else if (other.tag == "Player" && other.tag == "EnemyBullet")
-        {
-            UpdateLife();
-        }
+        // if (other.tag == "Player" && other.tag == "Enemy")
+        // {
+        //     UpdateLife();
+        // }
+        // else if (other.tag == "Player" && other.tag == "EnemyBullet")
+        // {
+        //     UpdateLife();
+        // }
         
     }
 
@@ -49,5 +49,10 @@ public class LivesScript : MonoBehaviour
         lives -= 1;
         string lifeDisplay = "Life: " + lives.ToString();
         lifeText.text = lifeDisplay;
+
+        if (lives <= 0)
+        {
+            GameManager.Instance.GameOver();
+        }
     }
 }

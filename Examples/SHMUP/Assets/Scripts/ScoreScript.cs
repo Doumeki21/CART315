@@ -19,22 +19,21 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         score = 0;
-        UpdateScore();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            UpdateScore();
-        }
-    }
+    // void Update()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         UpdateScore();
+    //     }
+    // }
 
     //update score is reusable here to track when enemies are killed. 
     public void UpdateScore()
     {
-        score += 1;
+        score += 500;
         string scoreDisplay = "Score: " + score.ToString();
         scoreText.text = scoreDisplay;
     }

@@ -22,12 +22,12 @@ public class Enemy : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision hitInfo)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
         //enemy checks to see if the bullet comes from their own.
-        if (hitInfo.gameObject.tag == "EnemyBullet")
+        if (hitInfo.gameObject.tag == "Player")
         {
-            health -= 0;
+            GameManager.Instance.livesScript.UpdateLife();
         }
     }
 
@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         // Quaternion.identity basically means no rotation!!
+        GameManager.Instance.scoreScript.UpdateScore();
         Destroy(gameObject);
         // Instantiate(deathEffect, transform.position, Quaternion.identity);
         

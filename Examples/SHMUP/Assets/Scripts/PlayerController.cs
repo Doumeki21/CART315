@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
     //an array of gun types recognized by the player.
     // Gun[] guns;
     
-    private float yPos, xPos;
+    private float yPos = 99;
+    private float xPos = 200;
     public float playerSpeed = 1.0f;
     public float topWall, bottomWall, leftWall, rightWall;
 
     public KeyCode upKey, downKey, leftKey, rightKey;
+    public SpriteRenderer playerImage;
     
     private bool shoot;
     // Start is called before the first frame update
@@ -59,5 +62,19 @@ public class PlayerController : MonoBehaviour
         //         gun.Shoot();
         //     }
         // }
+    }
+
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        if (hitInfo.tag == "Enemy")
+        {
+            playerImage.enabled = false;
+            this.Invoke("ImageFlicker",0.1f);
+        }
+    }
+
+    void ImageFlicker()
+    {
+        playerImage.enabled = true;
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,12 +10,33 @@ public class GameManager : MonoBehaviour
     public float timer = 0f;
     public float maxTimer = 8f;
 
+    public LivesScript livesScript;
+    public ScoreScript scoreScript;
+    public float endTimer = 10f;
+
     public static GameManager Instance;
-    
+
+    private void Awake()
+    {
+        //everything should reference this manager.
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //CALL THIS FUNCTION ONCE THE TIME REACHES THE END TIMER.
+        Invoke("EndGame", endTimer);
+    }
+
+    public void EndGame()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 
     // Update is called once per frame
