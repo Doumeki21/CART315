@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public LivesScript livesScript;
     public ScoreScript scoreScript;
-    public float endTimer = 15f;
+    public float endTimer = 23f;
 
     public static GameManager Instance;
 
@@ -32,11 +32,20 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         SceneManager.LoadScene("EndGame");
+        if (Input.GetKey(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     public void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     // Update is called once per frame
