@@ -1982,6 +1982,7 @@ MonoBehaviour:
   maxTimer: 8
   livesScript: {fileID: 2112281172}
   scoreScript: {fileID: 2112281171}
+  endTimer: 15
 --- !u!4 &2112281170
 Transform:
   m_ObjectHideFlags: 0
