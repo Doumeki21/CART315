@@ -150,6 +150,8 @@ MonoBehaviour:
   health: 100
   rb: {fileID: 2584076442770689033}
   enemySpeed: 100
+  attackSound: {fileID: 0}
+  destroyed: {fileID: 0}
 --- !u!114 &3423271800684165373
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public LivesScript livesScript;
     public ScoreScript scoreScript;
-    public float endTimer = 23f;
+    public float endTimer = 27f;
 
     public static GameManager Instance;
 

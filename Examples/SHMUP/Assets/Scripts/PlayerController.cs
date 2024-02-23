@@ -52,16 +52,6 @@ public class PlayerController : MonoBehaviour
             }
         }
         transform.localPosition = new Vector3(xPos, yPos, 0);
-        
-        // shoot = Input.GetKeyDown(KeyCode.P);
-        // if (shoot)
-        // {
-        //     // shoot = false;
-        //     foreach(Gun gun in guns)
-        //     {
-        //         gun.Shoot();
-        //     }
-        // }
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

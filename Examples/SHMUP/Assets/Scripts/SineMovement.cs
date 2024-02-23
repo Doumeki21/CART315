@@ -18,11 +18,6 @@ public class SineMovement : MonoBehaviour
         sinCenterY = transform.position.y;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 //Source: https://youtu.be/YtRxkWoTl_o?si=6MTsHeNBtyvDG-y9
     private void FixedUpdate()
     {
