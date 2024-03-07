@@ -9,32 +9,20 @@ Before March break, we each had to do a conceptualizing exercise to come up with
 
 ### Idea 1
 The first idea I had was to make a strategic rhythm game using color codes to manipulate creature behavior.
-<br> 
-<br>
-**Comments:**
-<br>
-- Designing creatures, coming up with all the behaviors of the animals, as well as timing to the beat would all be too ambitious for me to tackle in such a short period of time.
+- **Comments:**
+  - Designing creatures, coming up with all the behaviors of the animals, as well as timing to the beat would all be too ambitious for me to tackle in such a short period of time.
 
 ### Idea 2
-
 The second idea (from combining a partner’s word) was a game set in a farm or slaughterhouse, chopping animals to the beat.
-<br>
-<br>
-**Comments:**
-<br>
-
-- This idea seems more approachable than the first. The rhythm aspect contrasted with a slaughterhouse is quite dark, perhaps hinting at the inevitable end of the farm animals.
-- I find that the rhythm aspect is still a bit too ambitious with the time frame I have, but it is a concept I would like to give it a try in the future.
+- **Comments:**
+  - This idea seems more approachable than the first. The rhythm aspect contrasted with a slaughterhouse is quite dark, perhaps hinting at the inevitable end of the farm animals.
+  - The rhythm aspect is still a bit too ambitious with the time frame I have, but it is a concept I would like to give it a try in the future.
 
 ### Idea 3
 The third idea (from combining a partner’s word) was a game that uses colors as a communication tool to “decode” and manage emotions.
-<br>
-<br>
-**Comments:**
-<br>
-
-- I have been attracted to color theory since my art journey and I think it could be used as an effective game mechanic in relation to understanding human emotions.
-- I've decided to focus on this concept in the upcoming weeks, acknowledging that it may not be perfect but holds personal significance for me.
+- **Comments:**
+  - I have been attracted to color theory since my art journey and I think it could be used as an effective game mechanic in relation to understanding human emotions.
+  - I've decided to focus on this concept in the upcoming weeks, acknowledging that it may not be perfect but holds personal significance for me.
 
 ___
 
