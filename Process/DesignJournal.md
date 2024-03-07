@@ -19,10 +19,10 @@ The second idea (from combining a partner’s word) was a game set in a farm or 
   - The rhythm aspect is still a bit too ambitious with the time frame I have, but it is a concept I would like to give it a try in the future.
 
 ### Idea 3
-The third idea (from combining a partner’s word) was a game that uses colors as a communication tool to “decode” and manage emotions.
+The third idea (from combining a partner’s word) was a game that uses colors as a communication tool to “decode” and manage emotions. (Difficulty can range from simply selecting colors on screen to mixing colors to match complex emotions.)
 - **Comments:**
   - I have been attracted to color theory since my art journey and I think it could be used as an effective game mechanic in relation to understanding human emotions.
-  - I've decided to focus on this concept in the upcoming weeks, acknowledging that it may not be perfect but holds personal significance for me.
+  - I have decided to focus on this concept in the upcoming weeks, acknowledging that it may not be perfect but holds personal significance for me.
 
 ___
 
