@@ -39,7 +39,7 @@ The third idea (from combining a partner’s word) was a game that uses colors a
 ___
 
 # Design Journal: Game Analysis
-March 7th, 2024
+February 17, 2024
 <br>
 Design Journal: Game Analysis - Find a game that you know well or are interested by. What decisions have the designers made that cause the game to be interesting? Where have they failed? Think mechanically rather than thematically. What ideas/methods/techniques do you think you could borrow for future projects?
 
