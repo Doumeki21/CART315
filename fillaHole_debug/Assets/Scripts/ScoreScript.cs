@@ -23,11 +23,11 @@ public class ScoreScript : MonoBehaviour {
     }
     
     public void DecreaseScore() {
-        score-;
+        score-=1;
         DisplayScore();
     }
 
     private void DisplayScore() {
-        scoreText.text = "SCORE: " + scr;
+        scoreText.text = "SCORE: " + score;
     }
 }

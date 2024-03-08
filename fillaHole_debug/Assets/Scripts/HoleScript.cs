@@ -5,14 +5,14 @@ using UnityEngine;
 public class HoleScript : MonoBehaviour {
     public KeyCode holeKey;
     
-    private boolean filled;
+    private bool filled;
     private bool interactable;
 
     private SpriteRenderer sr;
     
     // Start is called before the first frame update
     void Start() {
-        sr = GetComponent<SpiteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
         sr.color = Color.black;
         filled = true;
         interactable = false;
@@ -29,7 +29,7 @@ public class HoleScript : MonoBehaviour {
             if (Input.GetKeyDown(holeKey)) {
                 interactable = false;
                 StopCoroutine("Open");
-                Score()
+                Score();
                 Fill();
             }
         }
@@ -49,7 +49,7 @@ public class HoleScript : MonoBehaviour {
     }
 
     private IEnumerator Open() {
-        sr.Color = Color.white;
+        sr.color = Color.white;
         filled = false;
         interactable = true;
         yield return new WaitForSeconds(2);
