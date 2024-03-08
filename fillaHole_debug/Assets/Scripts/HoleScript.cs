@@ -43,7 +43,7 @@ public class HoleScript : MonoBehaviour {
             // Am I spawning?
             if (doWeOpen < 2) {
                 // Open that hole!
-                StartCoroutine(Open);
+                StartCoroutine("Open");
             }
         }
     }
@@ -75,6 +75,6 @@ public class HoleScript : MonoBehaviour {
     private void Fill() {
         sr.color = Color.black;
         interactable = false;
-        filled == true;
+        filled = true;
     }
 } 

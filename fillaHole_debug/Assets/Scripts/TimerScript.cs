@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     private float levelTime;
 
     // Start is called before the first frame update
-    Start()
+    void Start()
     {
         timerText = GetComponent<Text>();
         ResetTimer();

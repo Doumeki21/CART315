@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
+using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour {
     private Text scoreText;
-    private int score;
+    private float score;
 
     public static ScoreScript S;
     
@@ -17,7 +17,7 @@ public class ScoreScript : MonoBehaviour {
         S = this;
     }
 
-    private void IncreaseScore() {
+    public void IncreaseScore() {
         score++;
         DisplayScore();
     }
@@ -27,7 +27,7 @@ public class ScoreScript : MonoBehaviour {
         DisplayScore();
     }
 
-    private void DisplayScore() {
+    public void DisplayScore() {
         scoreText.text = "SCORE: " + score;
     }
 }
