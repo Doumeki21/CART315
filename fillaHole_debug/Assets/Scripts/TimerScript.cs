@@ -24,9 +24,9 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (levelTime > 0)
+        if (levelTime >= 0)
         {
-            levelTime += Time.deltaTime;
+            levelTime -= Time.deltaTime;
             timerText.text = levelTime + " SECONDS LEFT";
         }
         else
@@ -34,5 +34,11 @@ public class TimerScript : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+
+    // void updateTimer(float currentTime)
+    // {
+    //     float second = Mathf.FloorToInt(currentTime % 60);
+    //     timerText.text = string.Format("(0:00)": "(1:00)", minutes, seconds);
+    // }
 }
 
