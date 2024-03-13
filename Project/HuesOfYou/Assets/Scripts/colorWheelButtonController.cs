@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//code referenced: https://youtu.be/MRdQyrpflB4?si=njfCzWDSyx-6BG8L
 
-public class colorWheelButtonController : MonoBehaviour
+public class ColorWheelButtonController : MonoBehaviour
 {
     public int ID;
     private Animator anim;
