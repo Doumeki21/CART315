@@ -29,6 +29,9 @@ The problem is I still haven't figured out precisely how I'm going to execute th
   - Player has low self esteem.
   - **The game proceeds by receiving praise from NPCs.**
 
+_(Mock ups for the meantime.)_
+![Mock up of the color wheel tutorial.](images/DraftColorWheel.png)
+![Mock up of the gameplay.](images/DraftMockUp.png)
 ___
 # Design Journal: Conceptualizing
 March 7th, 2024
