@@ -1,4 +1,35 @@
 ___
+# Design Journal: Prototyping Stage 1
+March 14, 2024
+<br>
+Journal about the first stage of your prototyping process. What was your idea? What specific questions where you trying to answer (goals)? Was it a look/feel, role, implementation prototype? What fidelity levels are you dealing with? What did you learn and what are the next steps?
+
+## Prototype 1
+
+### Goals
+My first stage of the prototype process was done using Twine. I mainly wanted to test how a basic interaction would flow with the narration. So it was more of a low to mid-fidelity prototype with a focus on the **role**.
+
+https://twinery.org/2/#/stories/761784b0-4e1f-4d80-81c4-7218d1911f42/play
+
+### Feedback
+After play testing, I received feedback on improving the narration direction, such as moving towards a linear story so that the audience can be more invested in the story and character development (instead of having to interact with multiple characters).
+
+In terms of the “look and feel” aspect, I need to think more about the kinds of UI elements I will need, how can the player know which color represents which emotion, and how the puzzles are going to work...
+
+### Next Steps
+Because some people mentioned about needing a way to show the player how the color psychology works, I decided that it would be good idea to make a tutorial as my next step.
+(But I think developing a gameplay sample would be better...)
+
+The problem is I still haven't figured out precisely how I'm going to execute the theme through actual gameplay. So I'll expand on the concept:
+
+- The game is about losing yourself and falling into conformity. While not putting color theory in a bad light, I want to use it as a tool /analogy for conveying this message.
+
+- Other characteristics of the game:
+  - Letting others define the player's self worth.
+  - Player has low self esteem.
+  - **The game proceeds by receiving praise from NPCs.**
+
+___
 # Design Journal: Conceptualizing
 March 7th, 2024
 <br>
