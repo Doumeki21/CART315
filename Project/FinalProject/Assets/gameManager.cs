@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//control when the music plays
 public class gameManager : MonoBehaviour
 {
     public AudioSource theMusic;
@@ -17,6 +18,15 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!startPlaying)
+        {
+            if (Input.anyKeyDown)
+            {
+                startPlaying = true;
+                theBS.hasStarted = true;
+                
+                theMusic.Play();
+            }
+        }
     }
 }
