@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //give feedback to the player when the bttn is pressed. 
-public class ButtoController : MonoBehaviour
+public class ButtonController : MonoBehaviour
 {
     private SpriteRenderer theSR;
     public Sprite defaultImage;
