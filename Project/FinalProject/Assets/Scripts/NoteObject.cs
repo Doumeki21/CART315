@@ -9,6 +9,7 @@ public class NoteObject : MonoBehaviour
     public bool canBePressed;
 
     public KeyCode keyToPress;
+    public KeyCode secondKey;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,9 +46,19 @@ public class NoteObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //check for the button.
         if (other.tag == "Activator")
         {
             canBePressed = true;
+        }
+        
+        //check for double notes, this = the note or obj the script is tied to.
+        if (this.gameObject.CompareTag("Double"))
+        {
+            if (Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+            {
+                canBePressed = true;
+            }
         }
     }
     

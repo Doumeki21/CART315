@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class ButtonController : MonoBehaviour
     public Sprite pressedImage;
 
     public KeyCode keyToPress;
+    public KeyCode secondKey;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +31,16 @@ public class ButtonController : MonoBehaviour
         {
             theSR.sprite = defaultImage;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Double"))
         {
-            
+            if (Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+            {
+                
+            }
         }
     }
 }
