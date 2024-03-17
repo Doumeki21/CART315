@@ -59,7 +59,6 @@ public class gameManager : MonoBehaviour
         //     }
         // }
         
-        currentMultiplier++;
         multiText.text = "x " + currentMultiplier;
         
         // currentScore += scorePerNote * currentMultiplier;
@@ -68,18 +67,21 @@ public class gameManager : MonoBehaviour
 
     public void okHit()
     {
+        currentMultiplier++;
         currentScore += scorePerNote * currentMultiplier;
         NoteHit();
     }
     
     public void GoodHit()
     {
+        currentMultiplier++;
         currentScore += scorePerGoodNote * currentMultiplier;
         NoteHit();
     }
     
     public void PerfectHit()
     {
+        currentMultiplier++;
         currentScore += scorePerPerfectNote * currentMultiplier;
         NoteHit();
     }
