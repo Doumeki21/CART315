@@ -1,4 +1,32 @@
 ___
+# Design Journal: Prototyping Stage 2
+March 21, 2024
+<br>
+For my second prototype, I kept the idea of using color theory but dropped the visual novel idea and went with a rhythm game instead.
+
+https://github.com/Doumeki21/CART315/tree/main/Project/FinalProject
+
+## Feedback
+After play testing the game, some people have suggested speeding up the notes, probably so that waiting for them to come down won’t be as nerve wracking.
+
+There were also suggestions to make the game more interesting to play such as:
+- Adding obstacles, like colors that you 'shouldn’t' click on. (Ex. Avoiding grayed out or wrong colors on the lane).
+- In addition, there could be an opening prompt at the beginning of each session that indicates a particular color or object that you should avoid. 
+- Alternatively, there could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
+- Another suggestion is if there is plot, I could also incorporate the above rules to colors that a character likes or hate.
+
+
+
+I was thinking of raising difficulty by adding more color buttons. So you would have to memories more color combinations. (Tho the length of the bars can sometimes be a giveaway)
+
+NEXT:
+- For my next prototype I’ll have to fiddle more with the BPM variable in Unity to change the note speed.
+- Another thing I should work on is to include unusual mechanics to make the player multitask. Perhaps raising the difficulty by adding more notes to mix (Ex. Going from 3 keys to 4 or 5.) and adding tetradic color combinations.
+- Regarding player feedback in the game, it would be good to add some VFX or indicators for the player to know how well they’re hitting the notes. (Fixing the currently broken multiplier can also help see when they have missed.)
+- Lastly, I could also consider adding sliders in the game but that could be optional.
+
+
+___
 # Design Journal: Prototyping Stage 1
 March 14, 2024
 <br>
