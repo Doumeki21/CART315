@@ -15,11 +15,7 @@ There were also suggestions to make the game more interesting to play such as:
 - Alternatively, there could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
 - Another suggestion is if there is plot, I could also incorporate the above rules to colors that a character likes or hate.
 
-
-
-I was thinking of raising difficulty by adding more color buttons. So you would have to memories more color combinations. (Tho the length of the bars can sometimes be a giveaway)
-
-NEXT:
+## Next:
 - For my next prototype I’ll have to fiddle more with the BPM variable in Unity to change the note speed.
 - Another thing I should work on is to include unusual mechanics to make the player multitask. Perhaps raising the difficulty by adding more notes to mix (Ex. Going from 3 keys to 4 or 5.) and adding tetradic color combinations.
 - Regarding player feedback in the game, it would be good to add some VFX or indicators for the player to know how well they’re hitting the notes. (Fixing the currently broken multiplier can also help see when they have missed.)
