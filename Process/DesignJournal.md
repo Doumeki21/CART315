@@ -1,12 +1,18 @@
 ___
 # Design Journal: Prototyping Stage 2
 March 21, 2024
+
+## Prototype 2
+### Goals
+For my second prototype, I  dropped the visual novel idea because I would have needed much more time to flesh out a story. Instead, I went with a rhythm game while also keeping the color theory aspect.
 <br>
-For my second prototype, I kept the idea of using color theory but dropped the visual novel idea and went with a rhythm game instead.
+Since I wanted to test the color theory mechanics, the prototype is closer to a **low fidelity implementation** to test the possibilities of the mechanics through code.
 
 https://github.com/Doumeki21/CART315/tree/main/Project/FinalProject
 
-## Feedback
+![Screenshot of the prototype](images/Prototype2.png)
+
+### Feedback
 After play testing the game, some people have suggested speeding up the notes, probably so that waiting for them to come down won’t be as nerve wracking.
 
 There were also suggestions to make the game more interesting to play such as:
@@ -14,12 +20,20 @@ There were also suggestions to make the game more interesting to play such as:
 - In addition, there could be an opening prompt at the beginning of each session that indicates a particular color or object that you should avoid. 
 - Alternatively, there could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
 - Another suggestion is if there is plot, I could also incorporate the above rules to colors that a character likes or hate.
+<br>
+<br>
+Reflections:
+- Maybe raising the difficulty by adding more colors to mix and adding tetradic color combinations would make the game more interesting. (Ex. Going from 3 keys to 4 or 5.)
+- I'm also thinking of including unusual mechanics to make the player multitask.
 
-## Next:
-- For my next prototype I’ll have to fiddle more with the BPM variable in Unity to change the note speed.
-- Another thing I should work on is to include unusual mechanics to make the player multitask. Perhaps raising the difficulty by adding more notes to mix (Ex. Going from 3 keys to 4 or 5.) and adding tetradic color combinations.
-- Regarding player feedback in the game, it would be good to add some VFX or indicators for the player to know how well they’re hitting the notes. (Fixing the currently broken multiplier can also help see when they have missed.)
-- Lastly, I could also consider adding sliders in the game but that could be optional.
+### Next Steps
+- [ ] Fiddle more with the BPM variable in Unity to change the note speed (while also matching the beat of the music).
+- [ ] Have the double notes fill the whole keyboard instead so the user will have to memorize the color combinations. (An added challenge.)
+  - [ ] A color theory tutorial will be implemented to complement this part for the mechanics. (Use the color Wheel.)
+  - [ ] Make the colors of the keyboard show at the top of the screen as well to have the player retain less info during gameplay.
+- [ ] (Look/feel) Regarding player feedback in the game, it would be good to add some VFX or indicators for the player to know how accurately they’re hitting the notes. 
+  - [x] Fixing the currently broken multiplier can also help see when they have missed.)
+- [ ] Lastly, I could also consider adding sliders in the game but that could be optional.
 
 
 ___
