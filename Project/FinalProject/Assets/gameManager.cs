@@ -67,6 +67,8 @@ public class gameManager : MonoBehaviour
 
     public void okHit()
     {
+        Debug.Log("ok");
+
         currentMultiplier++;
         currentScore += scorePerNote * currentMultiplier;
         NoteHit();
@@ -81,6 +83,7 @@ public class gameManager : MonoBehaviour
     
     public void PerfectHit()
     {
+        Debug.Log("perfect");
         currentMultiplier++;
         currentScore += scorePerPerfectNote * currentMultiplier;
         NoteHit();
@@ -88,6 +91,7 @@ public class gameManager : MonoBehaviour
 
     public void MissedNote()
     {
+        Debug.Log("missed");
         currentMultiplier = 1;
         multiText.text = "x " + currentMultiplier;
     }

@@ -27,20 +27,28 @@ public class NoteObject : MonoBehaviour
                 // gameManager.instance.NoteHit();
                 if (transform.position.y > 1.55 || transform.position.y < 0.44)
                 {
-                    Debug.Log("ok");
                     gameManager.instance.okHit();
+                    // gameObject.SetActive(false);
                 }
                 else if (transform.position.y > 1.35 || transform.position.y < 0.65)
                 {
-                    Debug.Log("good");
+                    // Debug.Log("good");
                     gameManager.instance.GoodHit();
+                    // gameObject.SetActive(false);
                 }
                 else
                 {
-                    Debug.Log("perfect");
                     gameManager.instance.PerfectHit();
+                    // gameObject.SetActive(false);
                 }
             }
+            // Destroy(this);
+        }
+        else if (transform.position.y < 0)
+        {
+            canBePressed = false;
+            gameManager.instance.MissedNote();
+            gameObject.SetActive(false);
         }
     }
 
@@ -62,12 +70,12 @@ public class NoteObject : MonoBehaviour
         }
     }
     
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Activator")
-        {
-            canBePressed = false;
-            gameManager.instance.MissedNote();
-        }
-    }
+    // private void OnTriggerExit2D(Collider2D other)
+    // {
+    //     if (other.tag == "Activator")
+    //     {
+    //         canBePressed = false;
+    //         gameManager.instance.MissedNote();
+    //     }
+    // }
 }
