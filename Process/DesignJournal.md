@@ -20,8 +20,7 @@ There were also suggestions to make the game more interesting to play such as:
 - In addition, there could be an opening prompt at the beginning of each session that indicates a particular color or object that you should avoid. 
 - Alternatively, there could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
 - Another suggestion is if there is plot, I could also incorporate the above rules to colors that a character likes or hate.
-<br>
-<br>
+
 Reflections:
 - Maybe raising the difficulty by adding more colors to mix and adding tetradic color combinations would make the game more interesting. (Ex. Going from 3 keys to 4 or 5.)
 - I'm also thinking of including unusual mechanics to make the player multitask.
