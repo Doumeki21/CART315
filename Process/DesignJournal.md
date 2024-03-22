@@ -28,7 +28,7 @@ Reflections:
 ### Next Steps
 - [ ] Fiddle more with the BPM variable in Unity to change the note speed (while also matching the beat of the music).
 - [ ] Have the double notes fill the whole keyboard instead so the user will have to memorize the color combinations. (An added challenge.)
-  - [ ] A color theory tutorial will be implemented to complement this part for the mechanics. (Use the color Wheel.)
+  - [ ] A color theory tutorial will be implemented to complement this part for the mechanics. (Using the color Wheel.)
   - [ ] Make the colors of the keyboard show at the top of the screen as well to have the player retain less info during gameplay.
 - [ ] (Look/feel) Regarding player feedback in the game, it would be good to add some VFX or indicators for the player to know how accurately they’re hitting the notes. 
   - [x] Fixing the currently broken multiplier can also help see when they have missed.)
