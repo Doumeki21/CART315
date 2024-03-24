@@ -17,8 +17,8 @@ After play testing the game, some people have suggested speeding up the notes, p
 
 There were also suggestions to make the game more interesting to play such as:
 - Adding obstacles, like colors that you 'shouldn’t' click on. (Ex. Avoiding grayed out or wrong colors on the lane).
-- In addition, there could be an opening prompt at the beginning of each session that indicates a particular color or object that you should avoid. 
-- Alternatively, there could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
+- There could be an opening prompt at the beginning of each session that indicates a particular color or object that you should avoid. 
+- There could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
 - Another suggestion is if there is plot, I could also incorporate the above rules to colors that a character likes or hate.
 
 Reflections:
