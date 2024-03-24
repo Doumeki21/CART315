@@ -46,7 +46,7 @@ Journal about the first stage of your prototyping process. What was your idea? W
 ### Goals
 My first stage of the prototype process was done using Twine. I mainly wanted to test how a basic interaction would flow with the narration. So it was more of a low to mid-fidelity prototype with a focus on the **role**.
 
-https://twinery.org/2/#/stories/761784b0-4e1f-4d80-81c4-7218d1911f42/play
+https://Doumeki21.github.io/CART315/Process/cart315-prototype1.html
 
 ### Feedback
 After play testing, I received feedback on improving the narration direction, such as moving towards a linear story so that the audience can be more invested in the story and character development (instead of having to interact with multiple characters).
