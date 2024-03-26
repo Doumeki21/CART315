@@ -33,14 +33,14 @@ public class ButtonController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Double"))
-        {
-            if (Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
-            {
-                
-            }
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     if (other.gameObject.CompareTag("Double"))
+    //     {
+    //         if (Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+    //         {
+    //             
+    //         }
+    //     }
+    // }
 }

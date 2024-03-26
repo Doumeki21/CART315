@@ -19,7 +19,7 @@ public class NoteObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (gameObject.tag == "Single" && Input.GetKeyDown(keyToPress))
         {
             if (canBePressed)
             {
@@ -44,6 +44,32 @@ public class NoteObject : MonoBehaviour
             }
             // Destroy(this);
         }
+
+        if (gameObject.tag == "Double" && Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+        {
+            if (canBePressed)
+            {
+                gameObject.SetActive(false);
+                // gameManager.instance.NoteHit();
+                if (transform.position.y > 1.55 || transform.position.y < 0.44)
+                {
+                    gameManager.instance.okHit();
+                    // gameObject.SetActive(false);
+                }
+                else if (transform.position.y > 1.35 || transform.position.y < 0.65)
+                {
+                    // Debug.Log("good");
+                    gameManager.instance.GoodHit();
+                    // gameObject.SetActive(false);
+                }
+                else
+                {
+                    gameManager.instance.PerfectHit();
+                    // gameObject.SetActive(false);
+                }
+            }
+        }
+        
         else if (transform.position.y < 0)
         {
             canBePressed = false;
@@ -59,15 +85,18 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = true;
         }
+        // //check for double notes, this = the note or obj the script is tied to.
+        // if (tag == "Double" && Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+        // {
+        //     canBePressed = true;
+        // }
         
-        //check for double notes, this = the note or obj the script is tied to.
-        if (this.gameObject.CompareTag("Double"))
-        {
-            if (Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
-            {
-                canBePressed = true;
-            }
-        }
+        
+        // //check for double notes, this = the note or obj the script is tied to.
+        // if (this.tag("Double") && Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+        // {
+        //     canBePressed = true;
+        // }
     }
     
     // private void OnTriggerExit2D(Collider2D other)
