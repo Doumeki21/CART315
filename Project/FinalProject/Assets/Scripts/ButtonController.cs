@@ -53,7 +53,6 @@ public class ButtonController : MonoBehaviour
                     currentImage = defaultImage;
                     theSR.sprite = currentImage;
                 }
-                
             }
             // if (gameObject.name == "redDefault")
             // {

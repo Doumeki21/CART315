@@ -10,6 +10,9 @@ public class NoteObject : MonoBehaviour
 
     public KeyCode keyToPress;
     public KeyCode secondKey;
+
+    public Sprite matchSprite;
+    public Sprite matchSecondSprite;
     // Start is called before the first frame update
     void Start()
     {
