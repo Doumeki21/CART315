@@ -45,7 +45,8 @@ public class NoteObject : MonoBehaviour
             // Destroy(this);
         }
 
-        if (gameObject.tag == "Double" && Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+        //Cannot use GetKeyDown to check 2 keys at once!!
+        if (gameObject.tag == "Double" && Input.GetKey(keyToPress) && Input.GetKey(secondKey))
         {
             if (canBePressed)
             {
@@ -85,15 +86,9 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = true;
         }
-        // //check for double notes, this = the note or obj the script is tied to.
-        // if (tag == "Double" && Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
-        // {
-        //     canBePressed = true;
-        // }
-        
         
         // //check for double notes, this = the note or obj the script is tied to.
-        // if (this.tag("Double") && Input.GetKeyDown(keyToPress) && Input.GetKeyDown(secondKey))
+        // if (gameObject.tag == "Double" && Input.GetKey(keyToPress) && Input.GetKey(secondKey))
         // {
         //     canBePressed = true;
         // }
