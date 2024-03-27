@@ -10,7 +10,9 @@ public class ColorSwitcher : MonoBehaviour
 
     private SpriteRenderer redButton;
     private SpriteRenderer blueButton;
-    private SpriteRenderer yellowButton;
+
+    private bool redIsDefault = true;
+    private bool blueIsDefault = true;
 
     // Start is called before the first frame update
     void Start()
@@ -27,27 +29,28 @@ public class ColorSwitcher : MonoBehaviour
     // Method to switch the color of the red button
     public void SwitchRedColor()
     {
-        if (redButton.sprite == redSprite)
+        if (redIsDefault)
         {
             redButton.sprite = yellowSprite;
         }
-        else if (redButton.sprite == yellowSprite)
+        else
         {
             redButton.sprite = redSprite;
         }
-        
+        redIsDefault = !redIsDefault;
     }
 
     // Method to switch the color of the blue button
     public void SwitchBlueColor()
     {
-        if (blueButton.sprite == blueSprite)
+        if (blueIsDefault)
         {
             blueButton.sprite = yellowSprite;
         }
-        else if (blueButton.sprite == yellowSprite)
+        else
         {
             blueButton.sprite = blueSprite;
         }
+        blueIsDefault = !blueIsDefault;
     }
 }

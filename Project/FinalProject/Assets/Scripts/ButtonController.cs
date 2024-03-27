@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 //give feedback to the player when the bttn is pressed. 
 public class ButtonController : MonoBehaviour
@@ -9,18 +10,19 @@ public class ButtonController : MonoBehaviour
     private SpriteRenderer theSR;
     public Sprite defaultImage;
     public Sprite pressedImage;
+    public Sprite switchedImage;
+    private Sprite currentImage; 
 
     public KeyCode keyToPress;
     public KeyCode secondKey;
     public KeyCode switchKey;
-    public ColorSwitcher colorSwitcher;
     
     // Start is called before the first frame update
     void Start()
     {
         //Assign the SR to whatever the same object the bttn controller is on.
         theSR = GetComponent<SpriteRenderer>();
-        colorSwitcher = FindObjectOfType<ColorSwitcher>();
+        currentImage = defaultImage;
     }
 
     // Update is called once per frame
@@ -33,20 +35,34 @@ public class ButtonController : MonoBehaviour
 
         if (Input.GetKeyUp(keyToPress))
         {
-            theSR.sprite = defaultImage;
+            theSR.sprite = currentImage;
         }
         
-        // Check for the switch key press
+        // Check for the switch key press (switch colors)
         if (Input.GetKeyDown(switchKey))
         {
-            if (gameObject.name == "redDefault")
+            if (gameObject.name == "redDefault" || gameObject.name == "blueDefault")
             {
-                colorSwitcher.SwitchRedColor();
+                if (currentImage == defaultImage)
+                {
+                    currentImage = switchedImage;
+                    theSR.sprite = currentImage;
+                }
+                else
+                {
+                    currentImage = defaultImage;
+                    theSR.sprite = currentImage;
+                }
+                
             }
-            else if (gameObject.name == "blueDefault")
-            {
-                colorSwitcher.SwitchBlueColor();
-            }
+            // if (gameObject.name == "redDefault")
+            // {
+            //     colorSwitcher.SwitchRedColor();
+            // }
+            // else if (gameObject.name == "blueDefault")
+            // {
+            //     colorSwitcher.SwitchBlueColor();
+            // }
         }
     }
 
