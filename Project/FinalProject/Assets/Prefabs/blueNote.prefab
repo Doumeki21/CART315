@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  keyToPress: 104
+  keyToPress: 103
   secondKey: 0
 --- !u!61 &1005280485562232219
 BoxCollider2D:

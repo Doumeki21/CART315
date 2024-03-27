@@ -12,11 +12,15 @@ public class ButtonController : MonoBehaviour
 
     public KeyCode keyToPress;
     public KeyCode secondKey;
+    public KeyCode switchKey;
+    public ColorSwitcher colorSwitcher;
+    
     // Start is called before the first frame update
     void Start()
     {
         //Assign the SR to whatever the same object the bttn controller is on.
         theSR = GetComponent<SpriteRenderer>();
+        colorSwitcher = FindObjectOfType<ColorSwitcher>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,19 @@ public class ButtonController : MonoBehaviour
         if (Input.GetKeyUp(keyToPress))
         {
             theSR.sprite = defaultImage;
+        }
+        
+        // Check for the switch key press
+        if (Input.GetKeyDown(switchKey))
+        {
+            if (gameObject.name == "redDefault")
+            {
+                colorSwitcher.SwitchRedColor();
+            }
+            else if (gameObject.name == "blueDefault")
+            {
+                colorSwitcher.SwitchBlueColor();
+            }
         }
     }
 
