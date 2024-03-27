@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //control when the music plays
 public class gameManager : MonoBehaviour
@@ -23,6 +24,11 @@ public class gameManager : MonoBehaviour
     
     public Text scoreText;
     public Text multiText;
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Main");
+    }
     
     // Start is called before the first frame update
     void Start()
