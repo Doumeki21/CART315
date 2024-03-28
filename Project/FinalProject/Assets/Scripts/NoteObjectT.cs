@@ -4,15 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //check when the musical notes enter the button areas.
-public class NoteObject : MonoBehaviour
+public class NoteObjectT : MonoBehaviour
 {
     public bool canBePressed;
 
     public KeyCode keyToPress;
     public KeyCode secondKey;
 
-    public Sprite matchSprite;
-    public Sprite matchSecondSprite;
+    private String matchSprite =""; // in collision 
+    private String matchSpriteOtherWay =""; // in collision
+    public String gameSprite; // set in unity
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +24,15 @@ public class NoteObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.tag == "Single" && Input.GetKeyDown(keyToPress))
-        {
+    
+        // if (gameObject.tag == "Single" &&  Input.GetKey(keyToPress)){
+
+            if (gameObject.tag == "Single"){
+            if(gameSprite.Equals(matchSprite)){
+            
             if (canBePressed)
             {
+               //Debug.Log(gameSprite);
                 gameObject.SetActive(false);
                 // gameManager.instance.NoteHit();
                 if (transform.position.y > 1.55 || transform.position.y < 0.44)
@@ -44,15 +51,21 @@ public class NoteObject : MonoBehaviour
                     gameManager.instance.PerfectHit();
                     // gameObject.SetActive(false);
                 }
+             }
             }
             // Destroy(this);
         }
 
-        //Cannot use GetKeyDown to check 2 keys at once!!
-        if (gameObject.tag == "Double" && Input.GetKey(keyToPress) && Input.GetKey(secondKey))
-        {
+            if (gameObject.tag == "Double" && Input.GetKey(keyToPress) && Input.GetKey(secondKey)){
+                //Debug.Log("keys");
+                if (gameSprite.Equals(matchSprite) || gameSprite.Equals(matchSpriteOtherWay)){
             if (canBePressed)
             {
+
+                // Debug.Log(matchSpriteOtherWay);
+                // Debug.Log(matchSprite);
+                // Debug.Log(gameSprite);
+
                 gameObject.SetActive(false);
                 // gameManager.instance.NoteHit();
                 if (transform.position.y > 1.55 || transform.position.y < 0.44)
@@ -71,41 +84,43 @@ public class NoteObject : MonoBehaviour
                     gameManager.instance.PerfectHit();
                     // gameObject.SetActive(false);
                 }
-            }
-        }
-        
+                   }//can be pressed
+             } //match color
+            }//match keys
+            
         else if (transform.position.y < 0)
         {
             canBePressed = false;
             gameManager.instance.MissedNote();
             gameObject.SetActive(false);
+            //matchSprite ="";
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         //check for the button.
-        if (other.tag == "Activator")
+        if (other.tag == "Activator" )
         {
+            
+        if(Input.GetKey(keyToPress)){
+           //Debug.Log(other.GetComponent<ButtonController>().matcher);
+ 
             canBePressed = true;
+         
+           if (matchSprite =="")
+           {
+           matchSprite =other.GetComponent<ButtonControllerT>().matcher; //once the notes hit the button
+           }
+           else if(matchSprite.Contains("*") ==false){
+           matchSpriteOtherWay =  other.GetComponent<ButtonControllerT>().matcher+ "*" + matchSprite;
+           matchSprite = matchSprite+ "*"+ other.GetComponent<ButtonControllerT>().matcher;
+         
+            //Debug.Log(matchSprite);
+            //Debug.Log(matchSpriteOtherWay);
+           }
         }
-
-        // Check for matching sprites (for double notes).
-        SpriteRenderer otherSpriteRenderer = other.GetComponent<SpriteRenderer>();
-        if (otherSpriteRenderer != null) //If the collider's GameObject doesn't have a SpriteRenderer component attached to it, GetComponent<SpriteRenderer>() will return null.
-        {
-            string otherSpriteName = otherSpriteRenderer.sprite.name;
-            if (gameObject.tag == "Double" && otherSpriteName == matchSprite.name && otherSpriteName == matchSecondSprite.name)
-            {
-                canBePressed = true;
-            }
         }
-        
-        // //check for double notes, this = the note or obj the script is tied to.
-        // if (gameObject.tag == "Double" && Input.GetKey(keyToPress) && Input.GetKey(secondKey))
-        // {
-        //     canBePressed = true;
-        // }
     }
     
     // private void OnTriggerExit2D(Collider2D other)

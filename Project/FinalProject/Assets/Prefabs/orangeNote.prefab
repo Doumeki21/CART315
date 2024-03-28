@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5933774122619887541}
   - component: {fileID: 436317462}
   - component: {fileID: 436317461}
+  - component: {fileID: 8000760696984533616}
   m_Layer: 0
   m_Name: orangeNote
-  m_TagString: Untagged
+  m_TagString: Double
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +128,21 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 102
   secondKey: 103
+  matchSprite: {fileID: 21300000, guid: 39cc91ce8965dc84ba1041f22f789e52, type: 3}
+  matchSecondSprite: {fileID: 21300000, guid: fcbde2ae00f5f834ab531a37697025c6, type: 3}
+--- !u!114 &8000760696984533616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048732173932547069}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3b60fcb9c4a364a9ec277b2411fd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePressed: 0
+  keyToPress: 102
+  secondKey: 103
+  gameSprite: redDefault*yellowDefault
