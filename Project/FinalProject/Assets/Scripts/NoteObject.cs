@@ -12,7 +12,7 @@ public class NoteObject : MonoBehaviour
     public KeyCode secondKey;
 
     public Sprite matchSprite;
-    public Sprite matchSecondSprite;
+    // public Sprite matchSecondSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,7 @@ public class NoteObject : MonoBehaviour
     }
 
     // Update is called once per frame
+    //Tracks accuracy of player input.
     void Update()
     {
         if (gameObject.tag == "Single" && Input.GetKeyDown(keyToPress))
@@ -85,7 +86,7 @@ public class NoteObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //check for the button.
-        if (other.tag == "Activator")
+        if (other.tag == "Activator" && gameObject.tag == "Single")
         {
             canBePressed = true;
         }
@@ -95,10 +96,14 @@ public class NoteObject : MonoBehaviour
         if (otherSpriteRenderer != null) //If the collider's GameObject doesn't have a SpriteRenderer component attached to it, GetComponent<SpriteRenderer>() will return null.
         {
             string otherSpriteName = otherSpriteRenderer.sprite.name;
-            if (gameObject.tag == "Double" && otherSpriteName == matchSprite.name && otherSpriteName == matchSecondSprite.name)
+            if (other.tag == "Activator" && gameObject.tag == "Double" && otherSpriteName == matchSprite.name)
             {
                 canBePressed = true;
             }
+            // else if (other.tag == "Activator" && gameObject.tag == "Single")
+            // {
+            //     canBePressed = true;
+            // }
         }
         
         // //check for double notes, this = the note or obj the script is tied to.

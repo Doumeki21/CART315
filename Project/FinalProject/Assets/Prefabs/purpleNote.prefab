@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3218610040283844075}
   - component: {fileID: 8916380124126519922}
   - component: {fileID: 683853875535110265}
+  - component: {fileID: 2455628395208516329}
   m_Layer: 0
   m_Name: purpleNote
   m_TagString: Double
@@ -28,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 5262002821794085997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 15.700384, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.4, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,5 +128,21 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 102
   secondKey: 103
-  matchSprite: {fileID: 0}
-  matchSecondSprite: {fileID: 0}
+  matchSprite: {fileID: 21300000, guid: 39cc91ce8965dc84ba1041f22f789e52, type: 3}
+  matchSecondSprite: {fileID: 21300000, guid: 711871cefbe64874697895381cac75e4, type: 3}
+--- !u!114 &2455628395208516329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262002821794085997}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3b60fcb9c4a364a9ec277b2411fd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePressed: 0
+  keyToPress: 102
+  secondKey: 103
+  gameSprite: redDefault*blueDefault

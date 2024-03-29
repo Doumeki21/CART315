@@ -145,4 +145,4 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 102
   secondKey: 0
-  gameSprite: 
+  gameSprite: redDefault
