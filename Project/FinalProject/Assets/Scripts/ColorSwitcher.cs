@@ -5,89 +5,60 @@ using UnityEngine;
 public class ColorSwitcher : MonoBehaviour
 {
 
-    public Color defaultColor;
-    public Color switchColor;
-    public KeyCode switchKey;
+    public Color defaultColor = new Color(0.96f, 0.84f, 0.12f);  // Default color (#F6D51F)
+    public Color switchRed = new Color(0.83f, 0.16f, 0.50f); 
+    public Color switchBlue = new Color(0.18f, 0.49f, 0.82f);
 
     private SpriteRenderer SRC;
-    private Color currentColor;
+    private Color currentColorD;
+    private Color currentColorH;
     // private bool isSwitched = false;
 
     // Start is called before the first frame update
     void Start()
     {
         SRC = GetComponent<SpriteRenderer>();
-        currentColor = defaultColor;
+        currentColorD = defaultColor;
+        currentColorH = defaultColor;
     }
 
     // Update is called once per frame
     void Update()
     {
         // Check if switch key is pressed
-        if (Input.GetKeyDown(switchKey))
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            if (gameObject.name == "switchL" || gameObject.name == "switchR")
+            if (gameObject.name == "switchL")
             {
-                if (currentColor == defaultColor)
+                if (currentColorD == defaultColor)
                 {
-                    currentColor = switchColor;
-                    SRC.color = currentColor;
+                    currentColorD = switchRed;
+                    SRC.color = currentColorD;
                 }
-                else
+                else if (currentColorD == switchRed)
                 {
-                    currentColor = defaultColor;
-                    SRC.color = currentColor;
+                    currentColorD = defaultColor;
+                    SRC.color = currentColorD;
+                }
+            }
+        }
+        
+        // Check if switch key is pressed
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            if (gameObject.name == "switchR")
+            {
+                if (currentColorH == defaultColor)
+                {
+                    currentColorH = switchBlue;
+                    SRC.color = currentColorH;
+                }
+                else if (currentColorH == switchBlue)
+                {
+                    currentColorH = defaultColor;
+                    SRC.color = currentColorH;
                 }
             }
         }
     }
-    // public Sprite redSprite;
-    // public Sprite blueSprite;
-    // public Sprite yellowSprite;
-    //
-    // private SpriteRenderer redButton;
-    // private SpriteRenderer blueButton;
-    //
-    // private bool redIsDefault = true;
-    // private bool blueIsDefault = true;
-
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-    //     // Find the red and blue buttons in the scene
-    //     redButton = GameObject.Find("RedDefault").GetComponent<SpriteRenderer>();
-    //     blueButton = GameObject.Find("BlueDefault").GetComponent<SpriteRenderer>();
-    //
-    //     // Set the default sprites for the red and blue buttons
-    //     redButton.sprite = redSprite;
-    //     blueButton.sprite = blueSprite;
-    // }
-    //
-    // // Method to switch the color of the red button
-    // public void SwitchRedColor()
-    // {
-    //     if (redIsDefault)
-    //     {
-    //         redButton.sprite = yellowSprite;
-    //     }
-    //     else
-    //     {
-    //         redButton.sprite = redSprite;
-    //     }
-    //     redIsDefault = !redIsDefault;
-    // }
-    //
-    // // Method to switch the color of the blue button
-    // public void SwitchBlueColor()
-    // {
-    //     if (blueIsDefault)
-    //     {
-    //         blueButton.sprite = yellowSprite;
-    //     }
-    //     else
-    //     {
-    //         blueButton.sprite = blueSprite;
-    //     }
-    //     blueIsDefault = !blueIsDefault;
-    // }
 }
