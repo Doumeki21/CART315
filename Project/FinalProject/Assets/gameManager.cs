@@ -88,6 +88,7 @@ public class gameManager : MonoBehaviour
     {
         currentMultiplier++;
         currentScore += scorePerGoodNote * currentMultiplier;
+        accuracyText.text = "DANDY";
         NoteHit();
     }
     
@@ -96,6 +97,7 @@ public class gameManager : MonoBehaviour
         Debug.Log("perfect");
         currentMultiplier++;
         currentScore += scorePerPerfectNote * currentMultiplier;
+        accuracyText.text = "SMASHIN'!";
         NoteHit();
     }
 
@@ -104,6 +106,7 @@ public class gameManager : MonoBehaviour
         Debug.Log("missed");
         currentMultiplier = 0;
         multiText.text = "" + currentMultiplier;
+        accuracyText.text = "YIKES";
         // multiText.text = "x " + currentMultiplier;
     }
 }
