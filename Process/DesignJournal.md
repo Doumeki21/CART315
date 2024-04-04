@@ -1,4 +1,26 @@
 ___
+# Design Journal: Prototyping Stage 3
+March 28, 2024
+
+## Prototype 3
+### Goals
+Focused on making the main game mechanic work which is to have the keyboard switch colors and the mix-colored-notes be able to detect those keys even after they have been switched.
+
+Issues: <br>
+I couldn't figure out how to make the the double notes detect 2 colors at the same time so I gave it an illusion of a "double" note by separating it into 2 single notes.
+
+### Feedback
+Adding obstacles, like colors that you 'shouldn’t' click on to make it more interesting. (Ex. Avoiding grayed out or wrong colors on the lane).
+delete this note from the previous journal
+
+### Next Steps
+For next week, I'll focus on implementing the lives and pause menu to wrap up the functionality of the game (role + implementation). I'll also improve the UI and add visuals for player feedback  (high fidelity + look/ feel).
+- [ ] Add lives in the game manager.
+- [ ] Add grey obstacles to avoid.
+- [ ] visual feedback:
+  - [ ] OK, GOOD, PERFECT ratings.
+  - [ ] character expressions (neutral, disappointed, ecstatic)
+___
 # Design Journal: Prototyping Stage 2
 March 21, 2024
 
@@ -26,8 +48,8 @@ Reflections:
 - I'm also thinking of including unusual mechanics to make the player multitask.
 
 ### Next Steps
-- [ ] Fiddle more with the BPM variable in Unity to change the note speed (while also matching the beat of the music).
-- [ ] Have the double notes fill the whole keyboard instead so the user will have to memorize the color combinations. (An added challenge.)
+- [x] Fiddle more with the BPM variable in Unity to change the note speed (while also matching the beat of the music).
+- [x] Have the double notes fill the whole keyboard instead so the user will have to memorize the color combinations. (An added challenge.)
   - [ ] A color theory tutorial will be implemented to complement this part for the mechanics. (Using the color Wheel.)
   - [ ] Make the colors of the keyboard show at the top of the screen as well to have the player retain less info during gameplay.
 - [ ] (Look/feel) Regarding player feedback in the game, it would be good to add some VFX or indicators for the player to know how accurately they’re hitting the notes. 
