@@ -4,11 +4,28 @@ April 4, 2024
 
 ## Prototype 4
 ### Goals
-- added visual feedback
-- changed a bit of the UI layout so the elements aren’t fighting for too much attention. (The color switches are moved closer to the keyboard so the users’ eyes don’t have to look far)
-- single notes detected properly.
-- multiplier moved towards the Center.
-- lives were still being added (before the blackout) >> had trouble with the slider method so attempted for the image fill method.
+TLDR: There was a mix of higher fidelity and implementation for the 4th prototype.
+
+Fixed Issues: <br>
+While working on the game this week, I noticed that the single notes weren't detecting properly after they have switched colors so I made the keyboard **match both colors and keys pressed**.
+Only some of my goals were complete in this prototype, which could be referred to last week's journal checklist. 
+
+- Some texts are displayed on the lane so the player can tell the accuracy of their hits. 
+- The UI layout was also moved so the elements aren’t fighting for too much attention. For example, the color switches are moved closer to the area of play so the users’ eyes don’t have to look too far to refer to it. The multiplier is also moved on the lane so they can keep track of their combo.
+
+Currently, the lives are still being implemented in the game (delayed due to power outage...) >> Having trouble with the slider method so attempted for the image fill method.
+
+![Screenshot of prototype4](images/Prototype4.png)
+![Screenshot of prototype4](images/Prototype4.5.jpg)
+
+### Next Steps
+- [ ] Finish implementing the lives.
+  > Game Over screen
+  - > Add Title screen + Restart/ replay
+    - [ ] Pause button maybeee??? [OPTIONAL]
+- [ ] Draw character head + expressions sprites that react to hit accuracy. (Totally not needed but it's something I'd like to do!)
+- [ ] Multiplier expand + fade out effect.
+
 
 ___
 # Design Journal: Prototyping Stage 3
@@ -16,21 +33,23 @@ March 28, 2024
 
 ## Prototype 3
 ### Goals
-Focused on making the main game mechanic work which is to have the keyboard switch colors and the mix-colored-notes be able to detect those keys even after they have been switched.
+Focused on making the main game mechanic to work which is to have the keyboard switch colors and the mix-colored-notes be able to detect those keys even after they have been switched.
+The music has also been changed.
 
 Issues: <br>
 I couldn't figure out how to make the the double notes detect 2 colors at the same time so I gave it an illusion of a "double" note by separating it into 2 single notes.
 
+![Screenshot of prototype3](images/Prototype3.png)
+
 ### Feedback
 Adding obstacles, like colors that you 'shouldn’t' click on to make it more interesting. (Ex. Avoiding grayed out or wrong colors on the lane).
-delete this note from the previous journal
 
 ### Next Steps
 For next week, I'll focus on implementing the lives and pause menu to wrap up the functionality of the game (role + implementation). I'll also improve the UI and add visuals for player feedback  (high fidelity + look/ feel).
 - [ ] Add lives in the game manager.
 - [ ] Add grey obstacles to avoid.
 - [ ] visual feedback:
-  - [ ] OK, GOOD, PERFECT ratings.
+  - [x] OK, GOOD, PERFECT ratings.
   - [ ] character expressions (neutral, disappointed, ecstatic)
 ___
 # Design Journal: Prototyping Stage 2
@@ -44,13 +63,12 @@ Since I wanted to test the color theory mechanics, the prototype is closer to a 
 
 https://github.com/Doumeki21/CART315/tree/main/Project/FinalProject
 
-![Screenshot of the prototype](images/Prototype2.png)
+![Screenshot of the rhythm game prototype](images/Prototype2.png)
 
 ### Feedback
 After play testing the game, some people have suggested speeding up the notes, probably so that waiting for them to come down won’t be as nerve wracking.
 
 There were also suggestions to make the game more interesting to play such as:
-- Adding obstacles, like colors that you 'shouldn’t' click on. (Ex. Avoiding grayed out or wrong colors on the lane).
 - There could be an opening prompt at the beginning of each session that indicates a particular color or object that you should avoid. 
 - There could be a level where you can mix any colors, one where you can’t mix a specific color, and another where you can’t mix 2 colors (and so on).
 - Another suggestion is if there is plot, I could also incorporate the above rules to colors that a character likes or hate.
