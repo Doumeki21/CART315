@@ -85,17 +85,18 @@ public class NoteObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //check for the button.
-        if (other.tag == "Activator" && gameObject.tag == "Single")
-        {
-            canBePressed = true;
-        }
-
         // Check for matching sprites (for double notes).
         SpriteRenderer otherSpriteRenderer = other.GetComponent<SpriteRenderer>();
         if (otherSpriteRenderer != null) //If the collider's GameObject doesn't have a SpriteRenderer component attached to it, GetComponent<SpriteRenderer>() will return null.
         {
             string otherSpriteName = otherSpriteRenderer.sprite.name;
+            
+            //check for the matching single notes.
+            if (other.tag == "Activator" && gameObject.tag == "Single" && otherSpriteName == matchSprite.name)
+            {
+                canBePressed = true;
+            }
+            
             if (other.tag == "Activator" && gameObject.tag == "Double" && otherSpriteName == matchSprite.name)
             {
                 canBePressed = true;

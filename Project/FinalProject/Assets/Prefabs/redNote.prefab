@@ -94,7 +94,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975302356729760321}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aafcd58d210a764da02d39cac2bbff6, type: 3}
   m_Name: 
@@ -102,8 +102,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 102
   secondKey: 0
-  matchSprite: {fileID: 0}
-  matchSecondSprite: {fileID: 0}
+  matchSprite: {fileID: 21300000, guid: 39cc91ce8965dc84ba1041f22f789e52, type: 3}
 --- !u!61 &1975302356729760327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,7 +136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975302356729760321}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf3b60fcb9c4a364a9ec277b2411fd5f, type: 3}
   m_Name: 
