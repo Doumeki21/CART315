@@ -1,4 +1,16 @@
 ___
+# Design Journal: Prototyping Stage 4
+April 4, 2024
+
+## Prototype 4
+### Goals
+- added visual feedback
+- changed a bit of the UI layout so the elements aren’t fighting for too much attention. (The color switches are moved closer to the keyboard so the users’ eyes don’t have to look far)
+- single notes detected properly.
+- multiplier moved towards the Center.
+- lives were still being added (before the blackout) >> had trouble with the slider method so attempted for the image fill method.
+
+___
 # Design Journal: Prototyping Stage 3
 March 28, 2024
 
