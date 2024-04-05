@@ -33,10 +33,7 @@ public class gameManager : MonoBehaviour
     }
     public void GameOver()
     {
-        if (currentHealth <= 0)
-        {
             SceneManager.LoadScene("GameOver");
-        }
     }
     
     // Start is called before the first frame update
@@ -45,7 +42,7 @@ public class gameManager : MonoBehaviour
         instance = this;
         scoreText.text = "0";
         currentMultiplier = 0;
-        currentHealth = maxHealth;
+        // currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -116,8 +113,9 @@ public class gameManager : MonoBehaviour
         currentMultiplier = 0;
         multiText.text = "" + currentMultiplier;
         accuracyText.text = "YIKES";
+        HealthManager.instance.TakeDamage(10);
 
-        currentHealth = currentHealth - 15;
+        // currentHealth = currentHealth - 15;
         // multiText.text = "x " + currentMultiplier;
     }
 }

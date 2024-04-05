@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public Image healthBar;
-    public int currentHealth = 100;
+    public Image HealthFill;
+    public float currentHealth = 100f;
     public int maxHealth = 100;
+
+    public static HealthManager instance; //this is a singleton!
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -20,9 +22,21 @@ public class HealthManager : MonoBehaviour
         
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.fillAmount = currentHealth / 100f;
+        // float displayHealth = currentHealth / 100f;
+        // Debug.Log(displayHealth);
+        HealthFill.fillAmount = currentHealth / 100f;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        gameManager.instance.GameOver();
     }
 }
