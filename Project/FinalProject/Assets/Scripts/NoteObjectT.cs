@@ -14,13 +14,8 @@ public class NoteObjectT : MonoBehaviour
     private String matchSprite =""; // in collision 
     private String matchSpriteOtherWay =""; // in collision
     public String gameSprite; // set in unity
-
-
-
-
+    
     // Start is called before the first frame update
-
-
     void Start()
     {
         
@@ -105,40 +100,40 @@ public class NoteObjectT : MonoBehaviour
      }//double
     }//update
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-       
-        //check for collision with button.
-        if (other.tag == "Activator" )
-        {
-        
-        //are we pressing the right key?
-        if(gameObject.tag == "Single" && Input.GetKey(keyToPress)){
-         
-         //check for match
-           if(matchSprite ==""){
-              matchSprite =other.GetComponent<ButtonControllerT>().matcher; //once the notes hit the button
-         }
-
-        } //SINGLE CASE
-
-
-/*** CHECK FOR DOUBLE **/
-        if(gameObject.tag == "Double" && (Input.GetKey(keyToPress) && Input.GetKey(secondKey))){
-             if(matchSprite ==""){
-              matchSprite =other.GetComponent<ButtonControllerT>().matcher; //once the notes hit the button
-         }
-          // //check for double
-           else if(matchSprite.Contains("*") ==false){
-           matchSpriteOtherWay =  other.GetComponent<ButtonControllerT>().matcher+ "*" + matchSprite;
-           matchSprite = matchSprite+ "*"+ other.GetComponent<ButtonControllerT>().matcher;
-         
-           }
-
-        } //DOUBLE
-        
-    }//trigger activator
-}
+//     private void OnTriggerStay2D(Collider2D other)
+//     {
+//        
+//         //check for collision with button.
+//         if (other.tag == "Activator" )
+//         {
+//         
+//         //are we pressing the right key?
+//         if(gameObject.tag == "Single" && Input.GetKey(keyToPress)){
+//          
+//          //check for match
+//            if(matchSprite ==""){
+//               matchSprite =other.GetComponent<ButtonControllerT>().matcher; //once the notes hit the button
+//          }
+//
+//         } //SINGLE CASE
+//
+//
+// /*** CHECK FOR DOUBLE **/
+//         if(gameObject.tag == "Double" && (Input.GetKey(keyToPress) && Input.GetKey(secondKey))){
+//              if(matchSprite ==""){
+//               matchSprite =other.GetComponent<ButtonControllerT>().matcher; //once the notes hit the button
+//          }
+//           // //check for double
+//            else if(matchSprite.Contains("*") ==false){
+//            matchSpriteOtherWay =  other.GetComponent<ButtonControllerT>().matcher+ "*" + matchSprite;
+//            matchSprite = matchSprite+ "*"+ other.GetComponent<ButtonControllerT>().matcher;
+//          
+//            }
+//
+//         } //DOUBLE
+//         
+//     }//trigger activator
+// }
     
     // private void OnTriggerExit2D(Collider2D other)
     // {

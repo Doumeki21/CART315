@@ -26,16 +26,16 @@ public class gameManager : MonoBehaviour
     public Text multiText;
     public Text accuracyText;
     
-
+    public Menu manager;
+    
     public void Restart()
     {
         SceneManager.LoadScene("Main");
     }
     public void GameOver()
     {
-            SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver");
     }
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -113,7 +113,7 @@ public class gameManager : MonoBehaviour
         currentMultiplier = 0;
         multiText.text = "" + currentMultiplier;
         accuracyText.text = "YIKES";
-        HealthManager.instance.TakeDamage(10);
+        HealthManager.instance.TakeDamage(10); //Calls back to health manager. 
 
         // currentHealth = currentHealth - 15;
         // multiText.text = "x " + currentMultiplier;

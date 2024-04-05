@@ -16,12 +16,6 @@ public class HealthManager : MonoBehaviour
         instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
