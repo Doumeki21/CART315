@@ -4,17 +4,15 @@ April 4, 2024
 
 ## Prototype 4
 ### Goals
-My fourth prototype had a mix of higher fidelity and implementation. The plan was to make the game more complete by adding a health system to provide a win/ lose situation. However, for the most part of this week, I was mainly trying to fix bugs that I hadn't noticed in my last prototype... 
+My fourth prototype had a mix of higher fidelity and implementation. The plan was to make the game more complete by adding a health system to provide a win/ lose situation. However, for the most part of this week, I was mainly trying to fix bugs that I hadn't noticed in my last prototype... The issue in question is that the single notes weren't detecting properly after they have switched colors, so I made the keyboard **match both colors and keys pressed** (the same way as how the double notes were coded).
 
-The issue in question: <br>
-While working on the game this week, I noticed that the single notes weren't detecting properly after they have switched colors so I made the keyboard **match both colors and keys pressed** (the same way as how the double notes were coded).
-Only some of my goals were complete in this prototype, which was referred from last week's journal checklist. 
-
-Some minor visuals I added:
+Some minor visuals I also added:
 - Some texts are displayed on the lane so the player can tell the accuracy of their hits. 
-- The UI layout was also moved so the elements aren’t fighting for too much attention. For example, the **color switches** are moved closer to the area of play so the users’ eyes don’t have to look too far to refer to it. The multiplier is also moved on the lane so they can keep track of their combo.
+- The UI layout was moved so the elements aren’t fighting for too much attention. For example, the **color switches** are moved closer to the area of play so the users’ eyes don’t have to look far to refer to it. The multiplier is also moved on the lane so they can keep track of their combo.
+- So far I have the drafts for my character:
+  ![Sprite drafts](images/SpritesDraft.png)
 
-Currently, the lives are still being implemented in the game (delayed due to power outage...)
+Currently, the lives are still being implemented in the game (delayed due to power outage from the snow storm...)
 
 ![Screenshot of prototype4](images/Prototype4.png)
 ![Screenshot of prototype4](images/Prototype4.5.jpg)
