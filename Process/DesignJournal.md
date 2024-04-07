@@ -14,7 +14,7 @@ Added visuals:
 So far I have the drafts for my character:
   ![Sprite drafts](images/SpritesDraft.png)
 
-The lives are still being implemented in the game (delayed due to power outage from the snow storm...)
+The health system is still being implemented in the game (delayed due to power outage from the snow storm...)
 
 ![Screenshot of prototype4](images/Prototype4.png)
 ![Screenshot of prototype4](images/Prototype4.5.jpg)
