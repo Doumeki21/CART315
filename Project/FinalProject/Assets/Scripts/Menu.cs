@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // public void Play()
-    // {
-    //     SceneManager.LoadScene("Play");
-    // }
-    public void Restart()
+    public void Play()
     {
         SceneManager.LoadScene("Main");
+    }
+    // public void Restart()
+    // {
+    //     SceneManager.LoadScene("Main");
+    // }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
     }
     
 }
