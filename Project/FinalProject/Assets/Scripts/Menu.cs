@@ -9,14 +9,15 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
-    // public void Restart()
-    // {
-    //     SceneManager.LoadScene("Main");
-    // }
 
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
+    }
+
+    public void Title()
+    {
+        SceneManager.LoadScene("Title");
     }
     
 }

@@ -27,6 +27,7 @@ public class gameManager : MonoBehaviour
     private Coroutine changeSpriteRoutine;
     // public Menu manager; //To access the menu manager script when start game (title screen), paused, complete level, or when you lose.
     
+    //remove later
     public void Play()
     {
         SceneManager.LoadScene("Main");
