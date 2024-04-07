@@ -23,11 +23,20 @@ public class HealthManager : MonoBehaviour
         // Debug.Log(displayHealth);
         HealthFill.fillAmount = currentHealth / 100f;
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        // if (currentHealth <= 0)
+        // {
+        //     Die();
+        // }
     }
+
+    // bool LowHealth()
+    // {
+    //     if (currentHealth <= 50f)
+    //     {
+    //         
+    //     }
+    //     return true;
+    // }
 
     void Die()
     {

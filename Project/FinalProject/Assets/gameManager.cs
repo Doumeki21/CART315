@@ -80,10 +80,19 @@ public class gameManager : MonoBehaviour
         scoreText.text = "" + currentScore;
     }
     
+    //Chara returns neutral after 1 second.
     IEnumerator ChangeSpriteToNeutral()
     {
         yield return new WaitForSeconds(1.0f);  // Wait for 1 second
         CharacterManager.instance.SwitchNeutral();
+        // if (HealthManager.instance.currentHealth <= 50f)
+        // {
+        //     CharacterManager.instance.SwitchYikes();
+        // }
+        // else
+        // {
+        //     CharacterManager.instance.SwitchNeutral();
+        // }
     }
 
     public void okHit()
