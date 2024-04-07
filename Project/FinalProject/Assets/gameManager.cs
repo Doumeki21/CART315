@@ -19,19 +19,19 @@ public class gameManager : MonoBehaviour
     public int scorePerPerfectNote = 250;
 
     public int currentMultiplier;
-    // public int multiplierTracker;
-    // public int[] multiplierThresholds;
     
     public Text scoreText;
     public Text multiText;
     public Text accuracyText;
     
-    public Menu manager;
+    private Coroutine changeSpriteRoutine;
+    // public Menu manager; //To access the menu manager script when start game (title screen), paused, complete level, or when you lose.
     
     public void Restart()
     {
         SceneManager.LoadScene("Main");
     }
+    //Go to gameover screen once you lose all health.
     public void GameOver()
     {
         SceneManager.LoadScene("GameOver");
@@ -79,6 +79,12 @@ public class gameManager : MonoBehaviour
         // scoreText.text = "Score: " + currentScore;
         scoreText.text = "" + currentScore;
     }
+    
+    IEnumerator ChangeSpriteToNeutral()
+    {
+        yield return new WaitForSeconds(1.0f);  // Wait for 1 second
+        CharacterManager.instance.SwitchNeutral();
+    }
 
     public void okHit()
     {
@@ -88,6 +94,13 @@ public class gameManager : MonoBehaviour
         currentScore += scorePerNote * currentMultiplier;
         accuracyText.text = "OK";
         NoteHit();
+        CharacterManager.instance.SwitchOk();
+        
+        if (changeSpriteRoutine != null)
+        {
+            StopCoroutine(changeSpriteRoutine);  // Stop any existing coroutine
+        }
+        changeSpriteRoutine = StartCoroutine(ChangeSpriteToNeutral());  // Start a new coroutine
     }
     
     public void GoodHit()
@@ -96,6 +109,13 @@ public class gameManager : MonoBehaviour
         currentScore += scorePerGoodNote * currentMultiplier;
         accuracyText.text = "DANDY";
         NoteHit();
+        CharacterManager.instance.SwitchSplendid();
+        
+        if (changeSpriteRoutine != null)
+        {
+            StopCoroutine(changeSpriteRoutine);  // Stop any existing coroutine
+        }
+        changeSpriteRoutine = StartCoroutine(ChangeSpriteToNeutral());  // Start a new coroutine
     }
     
     public void PerfectHit()
@@ -105,6 +125,13 @@ public class gameManager : MonoBehaviour
         currentScore += scorePerPerfectNote * currentMultiplier;
         accuracyText.text = "SMASHIN'!";
         NoteHit();
+        CharacterManager.instance.SwitchSmashn();
+        
+        if (changeSpriteRoutine != null)
+        {
+            StopCoroutine(changeSpriteRoutine);  // Stop any existing coroutine
+        }
+        changeSpriteRoutine = StartCoroutine(ChangeSpriteToNeutral());  // Start a new coroutine
     }
 
     public void MissedNote()
@@ -114,6 +141,13 @@ public class gameManager : MonoBehaviour
         multiText.text = "" + currentMultiplier;
         accuracyText.text = "YIKES";
         HealthManager.instance.TakeDamage(10); //Calls back to health manager. 
+        CharacterManager.instance.SwitchYikes();
+        
+        if (changeSpriteRoutine != null)
+        {
+            StopCoroutine(changeSpriteRoutine);  // Stop any existing coroutine
+        }
+        changeSpriteRoutine = StartCoroutine(ChangeSpriteToNeutral());  // Start a new coroutine
 
         // currentHealth = currentHealth - 15;
         // multiText.text = "x " + currentMultiplier;
