@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1975302356729760325}
   - component: {fileID: 1975302356729760324}
   - component: {fileID: 1975302356729760327}
-  - component: {fileID: 1072883317143847712}
   m_Layer: 0
   m_Name: redNote
   m_TagString: Single
@@ -129,19 +128,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &1072883317143847712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975302356729760321}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf3b60fcb9c4a364a9ec277b2411fd5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePressed: 0
-  keyToPress: 102
-  secondKey: 0
-  gameSprite: redDefault
