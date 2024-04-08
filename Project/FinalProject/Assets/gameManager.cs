@@ -10,6 +10,7 @@ public class gameManager : MonoBehaviour
     public AudioSource theMusic;
     public bool startPlaying;
     public BeatScroller theBS;
+    public AudioSource hurtSFX;
 
     public static gameManager instance;
 
@@ -153,6 +154,7 @@ public class gameManager : MonoBehaviour
         accuracyText.text = "YIKES";
         HealthManager.instance.TakeDamage(10); //Calls back to health manager. 
         CharacterManager.instance.SwitchYikes();
+        hurtSFX.Play();
         
         if (changeSpriteRoutine != null)
         {

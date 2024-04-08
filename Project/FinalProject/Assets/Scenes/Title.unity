@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.23364, y: 31}
+  m_AnchoredPosition: {x: 990.5, y: 31}
   m_SizeDelta: {x: 390, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83401686
@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 275432370}
   - component: {fileID: 275432369}
   - component: {fileID: 275432371}
+  - component: {fileID: 275432372}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -647,6 +648,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5beaae3414cdc5a4291052133618cc8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ButtonImage: {fileID: 615174967}
+  DefaultSprite: {fileID: 21300000, guid: 162395d7de7e86c488201c950cf8cbe0, type: 3}
+  HoverSprite: {fileID: 21300000, guid: 2c588649457926a4a9f3025fb8267efc, type: 3}
+--- !u!114 &275432372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275432367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5beaae3414cdc5a4291052133618cc8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ButtonImage: {fileID: 835454175}
   DefaultSprite: {fileID: 21300000, guid: e3aab54e9b80e28468f37f3a1c0eef71, type: 3}
   HoverSprite: {fileID: 21300000, guid: d746f0aa8b45f6044a42ddebb2ba7a91, type: 3}
@@ -669,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &615174964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -687,7 +703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.23364, y: -123.9}
+  m_AnchoredPosition: {x: 1044, y: -123.9}
   m_SizeDelta: {x: 390, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &615174965
@@ -707,7 +723,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 275432371}
           m_TargetAssemblyTypeName: ButtonSwitch, Assembly-CSharp
           m_MethodName: OnMouseEnter
           m_Mode: 1
@@ -723,7 +739,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 275432371}
           m_TargetAssemblyTypeName: ButtonSwitch, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -779,9 +795,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 275432370}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Restart
+        m_MethodName: How
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -811,7 +827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3aab54e9b80e28468f37f3a1c0eef71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 162395d7de7e86c488201c950cf8cbe0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -950,7 +966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.23364, y: -123.9}
+  m_AnchoredPosition: {x: 1144.234, y: -278.9}
   m_SizeDelta: {x: 390, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &835454173
@@ -970,7 +986,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 275432371}
+        - m_Target: {fileID: 275432372}
           m_TargetAssemblyTypeName: ButtonSwitch, Assembly-CSharp
           m_MethodName: OnMouseEnter
           m_Mode: 1
@@ -986,7 +1002,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 275432371}
+        - m_Target: {fileID: 275432372}
           m_TargetAssemblyTypeName: ButtonSwitch, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
