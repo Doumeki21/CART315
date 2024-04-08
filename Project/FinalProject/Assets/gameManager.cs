@@ -59,6 +59,11 @@ public class gameManager : MonoBehaviour
                 theMusic.Play();
             }
         }
+
+        if (!theMusic.isPlaying && theMusic.clip != null)
+        {
+            SceneManager.LoadScene("Victory");
+        }
     }
 
     public void NoteHit()
