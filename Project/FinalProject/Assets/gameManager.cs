@@ -27,11 +27,6 @@ public class gameManager : MonoBehaviour
     private Coroutine changeSpriteRoutine;
     // public Menu manager; //To access the menu manager script when start game (title screen), paused, complete level, or when you lose.
     
-    //remove later
-    public void Play()
-    {
-        SceneManager.LoadScene("Main");
-    }
     //Go to gameover screen once you lose all health.
     public void GameOver()
     {
@@ -51,13 +46,14 @@ public class gameManager : MonoBehaviour
     {
         if (!startPlaying)
         {
-            if (Input.anyKeyDown)
-            {
-                startPlaying = true;
-                theBS.hasStarted = true;
+            startPlaying = true;
+            theBS.hasStarted = true;
                 
-                theMusic.Play();
-            }
+            theMusic.Play();
+            // if (Input.anyKeyDown)
+            // {
+            //     
+            // }
         }
 
         if (!theMusic.isPlaying && theMusic.clip != null)
