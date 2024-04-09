@@ -9,6 +9,8 @@ public class ButtonSwitch : MonoBehaviour
     public Sprite DefaultSprite;
     public Sprite HoverSprite;
 
+    public AudioSource HoverSFX;
+
     private void Start()
     {
         ButtonImage.sprite = DefaultSprite;  // Set default sprite on start
@@ -16,6 +18,7 @@ public class ButtonSwitch : MonoBehaviour
 
     public void OnMouseEnter()
     {
+        HoverSFX.Play();
         ButtonImage.sprite = HoverSprite;
     }
 

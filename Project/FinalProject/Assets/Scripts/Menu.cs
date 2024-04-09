@@ -8,6 +8,8 @@ public class Menu : MonoBehaviour
 {
     public AudioSource lostSFX;
     public AudioSource winSFX;
+    
+    public AudioSource ConfirmSFX;
 
     private void Awake()
     {
@@ -19,6 +21,11 @@ public class Menu : MonoBehaviour
         {
             winSFX.Play();
         }
+    }
+
+    public void BttnClickHandler()
+    {
+        ConfirmSFX.Play();
     }
 
     public void Play()
