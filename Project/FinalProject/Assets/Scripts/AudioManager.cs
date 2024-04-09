@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SoundManager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static SoundManager instance;
+    public static AudioManager instance;
     public AudioSource musicSource; //Assign from scene.
     public AudioClip musicClip; // Assign your background music clip here (from assets)
 
     public List<string> targetSceneNames;
+    public AudioSource buttonClickSFX;
     void Awake()
     {
         if (instance != null && instance != this)
@@ -53,6 +54,15 @@ public class SoundManager : MonoBehaviour
         if (!targetSceneNames.Contains(SceneManager.GetActiveScene().name))
         {
             musicSource.Stop();
+        }
+    }
+    
+    //Accessed in Menu.cs
+    public void PlayButtonClickSFX()
+    {
+        if (buttonClickSFX != null)
+        {
+            buttonClickSFX.Play();
         }
     }
 }

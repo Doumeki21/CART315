@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
     public AudioSource lostSFX;
     public AudioSource winSFX;
     
-    public AudioSource ConfirmSFX;
+    // public AudioSource ConfirmSFX;
 
     private void Awake()
     {
@@ -23,9 +23,10 @@ public class Menu : MonoBehaviour
         }
     }
 
-    public void BttnClickHandler()
+    public void ButtonClicked()
     {
-        ConfirmSFX.Play();
+        AudioManager.instance.PlayButtonClickSFX(); // Assuming a button click trigger
+        // Perform other button actions (e.g., scene loading)
     }
 
     public void Play()
