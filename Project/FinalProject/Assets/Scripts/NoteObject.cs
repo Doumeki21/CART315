@@ -13,11 +13,7 @@ public class NoteObject : MonoBehaviour
 
     public Sprite matchSprite;
     // public Sprite matchSecondSprite;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     //Tracks accuracy of player input.
