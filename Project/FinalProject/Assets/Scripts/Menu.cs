@@ -49,4 +49,15 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Instructions");
     }
     
+    public void QuitGameButton()
+    {
+        QuitGame();
+    }
+
+    void QuitGame()
+    {
+        Application.Quit(); // Quits the game
+        // Alternatively, can use SceneManager.LoadScene("QuitScene") for a dedicated quit scene
+    }
+    
 }
