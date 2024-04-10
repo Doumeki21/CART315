@@ -11,6 +11,9 @@ public class gameManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
     public AudioSource hurtSFX;
+    // public AudioSource okSFX;
+    // public AudioSource goodSFX;
+    // public AudioSource perfSFX;
 
     public static gameManager instance;
 
@@ -107,6 +110,7 @@ public class gameManager : MonoBehaviour
         accuracyText.text = "OK";
         NoteHit();
         CharacterManager.instance.SwitchOk();
+        // okSFX.Play();
         
         if (changeSpriteRoutine != null)
         {
@@ -122,6 +126,7 @@ public class gameManager : MonoBehaviour
         accuracyText.text = "DANDY";
         NoteHit();
         CharacterManager.instance.SwitchSplendid();
+        // goodSFX.Play();
         
         if (changeSpriteRoutine != null)
         {
@@ -138,6 +143,7 @@ public class gameManager : MonoBehaviour
         accuracyText.text = "SMASHIN'!";
         NoteHit();
         CharacterManager.instance.SwitchSmashn();
+        // perfSFX.Play();
         
         if (changeSpriteRoutine != null)
         {
