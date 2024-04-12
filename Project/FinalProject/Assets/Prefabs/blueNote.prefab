@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  keyToPress: 103
+  keyToPress: 106
   secondKey: 0
   matchSprite: {fileID: 21300000, guid: 711871cefbe64874697895381cac75e4, type: 3}
 --- !u!61 &1005280485562232219

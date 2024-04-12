@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  keyToPress: 103
-  secondKey: 0
+  keyToPress: 102
+  secondKey: 106
   matchSprite: {fileID: 21300000, guid: fcbde2ae00f5f834ab531a37697025c6, type: 3}
 --- !u!61 &2328889132400895389
 BoxCollider2D:

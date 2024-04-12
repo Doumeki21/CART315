@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6048732173932547069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5, y: 20.03, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.9994, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,9 +127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 102
-  secondKey: 103
+  secondKey: 106
   matchSprite: {fileID: 21300000, guid: 39cc91ce8965dc84ba1041f22f789e52, type: 3}
-  matchSecondSprite: {fileID: 21300000, guid: fcbde2ae00f5f834ab531a37697025c6, type: 3}
 --- !u!114 &8000760696984533616
 MonoBehaviour:
   m_ObjectHideFlags: 0
