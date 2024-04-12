@@ -1,3 +1,18 @@
+# Design Journal: Final Prototype
+April 12, 2024
+
+### Goal
+
+### Presentation
+I noticed that my presentation probably wasn't elaborate enough since there were some people who were confused with how my game mechanics worked. <br>
+One thing I know I should have included was a small gameplay in the powerpoint (either a video or a GIF) to give a better idea for those who have never seen the game. 
+
+### Feedback
+- Generally, everyone have said that the game is really difficult to play. I have received comments that combining colors "take a lot of brain power" Ahah...
+  - I think maybe the instructions could be improved? (Like an explanation to why yellow and red make yellow. Maybe a color wheel could help?)
+  - An interactive tutorial might also be good for the player's learning curve.
+- Some people have also mentioned that the yellow diamond UI seem to draw in a lot of attention and they get mixed up with what colors they currently have in hand. 
+  - So I have put 2 more bigger diamonds that tracks which colors the player currently has. (Personally, it took me some time to get used to since it felt like there were more colors to look take in mentally.) 
 ___
 # Design Journal: Prototyping Stage 4
 April 4, 2024
