@@ -1,7 +1,5 @@
 # Design Journal: Final Prototype
-April 12, 2024
-
-### Goal
+April 12 - 17, 2024
 
 ### Presentation
 I noticed that my presentation probably wasn't elaborate enough since there were some people who were confused with how my game mechanics worked. <br>
@@ -11,8 +9,16 @@ One thing I know I should have included was a small gameplay in the powerpoint (
 - Generally, everyone have said that the game is really difficult to play. I have received comments that combining colors "take a lot of brain power" Ahah...
   - I think maybe the instructions could be improved? (Like an explanation to why yellow and red make yellow. Maybe a color wheel could help?)
   - An interactive tutorial might also be good for the player's learning curve.
+  - In the end, I added a toggle button to show the color combination guide for players that need to refer to it. I also added a survival and practice mode for those who wanted to get used to color mixing (without taking damage) before taking on the actual challenge.
 - Some people have also mentioned that the yellow diamond UI seem to draw in a lot of attention and they get mixed up with what colors they currently have in hand. 
-  - So I have put 2 more bigger diamonds that tracks which colors the player currently has. (Personally, it took me some time to get used to since it felt like there were more colors to look take in mentally.) 
+  - So I have put 2 more bigger diamonds that tracks which colors the player currently have. (Personally, it took me some time to get used to since it felt like there were more colors to look take in mentally.) 
+- Feel:
+  - People have mentioned that they key controls can be a bit uncomfortable because of how close they are too each other (F and G). I agree that not everyone has the same hand and keyboard sizes, so I moved the GH keys to JK for more breathing room. 
+
+### Closing Thoughts
+Overall I had more fun than I thought I would since I didn't have a good experience learning coding in the past. I do think that the Unity interface aided a lot in my learning curve. (I also discovered that developing small games can be a really fun exercise! Though I do need to get some physical exercise...) 
+
+I hope to continue polishing this game in the future. For example, exploring some more (2D VFX) animations would be really nice.
 ___
 # Design Journal: Prototyping Stage 4
 April 4, 2024
