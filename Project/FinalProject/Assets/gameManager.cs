@@ -29,7 +29,8 @@ public class gameManager : MonoBehaviour
     public Text multiText;
     public Text accuracyText;
     public Text modeText;
-    
+
+    public Color white = new Color();
     private Coroutine changeSpriteRoutine;
     // public Menu manager; //To access the menu manager script when start game (title screen), paused, complete level, or when you lose.
     
@@ -62,6 +63,11 @@ public class gameManager : MonoBehaviour
             //     
             // }
         }
+        
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("Title");
+        }
 
         if (!theMusic.isPlaying && theMusic.clip != null)
         {
@@ -74,10 +80,12 @@ public class gameManager : MonoBehaviour
         if (ModeManager.isPracticeMode)
         {
             modeText.text = "Practice Mode";
+            modeText.color = new Color(0.34f, 0.93f, 0.31f);
         }
         else
         {
             modeText.text = "Survival Mode";
+            modeText.color = new Color(0.96f, 0.84f, 0.12f);
         }
     }
 
