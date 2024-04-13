@@ -9,6 +9,8 @@ public class Menu : MonoBehaviour
     public AudioSource lostSFX;
     public AudioSource winSFX;
     
+    public bool isPracticeMode = true;
+    
     // public AudioSource ConfirmSFX;
 
     private void Awake()
@@ -29,9 +31,20 @@ public class Menu : MonoBehaviour
         // Perform other button actions (e.g., scene loading)
     }
 
+    public void Survival()
+    {
+        ModeManager.isPracticeMode = false;
+        SceneManager.LoadScene("Main");
+    }
+    public void Practice()
+    {
+        ModeManager.isPracticeMode = true;
+        SceneManager.LoadScene("Main");
+    }
+
     public void Play()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Modes");
     }
 
     public void Credits()

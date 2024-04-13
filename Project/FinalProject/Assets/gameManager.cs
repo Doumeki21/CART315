@@ -11,6 +11,7 @@ public class gameManager : MonoBehaviour
     public bool startPlaying;
     public BeatScroller theBS;
     public AudioSource hurtSFX;
+    
     // public AudioSource okSFX;
     // public AudioSource goodSFX;
     // public AudioSource perfSFX;
@@ -27,6 +28,7 @@ public class gameManager : MonoBehaviour
     public Text scoreText;
     public Text multiText;
     public Text accuracyText;
+    public Text modeText;
     
     private Coroutine changeSpriteRoutine;
     // public Menu manager; //To access the menu manager script when start game (title screen), paused, complete level, or when you lose.
@@ -42,6 +44,7 @@ public class gameManager : MonoBehaviour
         instance = this;
         scoreText.text = "0";
         currentMultiplier = 0;
+        CheckMode();
         // currentHealth = maxHealth;
     }
 
@@ -66,18 +69,20 @@ public class gameManager : MonoBehaviour
         }
     }
 
+    void CheckMode()
+    {
+        if (ModeManager.isPracticeMode)
+        {
+            modeText.text = "Practice Mode";
+        }
+        else
+        {
+            modeText.text = "Survival Mode";
+        }
+    }
+
     public void NoteHit()
     {
-        // if (currentMultiplier - 1 < multiplierThresholds.Length)
-        // {
-        //     multiplierTracker++; //check if they have passed the thresholds.
-        //     if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker)
-        //     {
-        //         multiplierTracker = 0;
-        //         currentMultiplier++;
-        //     }
-        // }
-        
         // multiText.text = "x " + currentMultiplier;
         multiText.text = "" + currentMultiplier;
         
@@ -158,9 +163,18 @@ public class gameManager : MonoBehaviour
         currentMultiplier = 0;
         multiText.text = "" + currentMultiplier;
         accuracyText.text = "YIKES";
-        HealthManager.instance.TakeDamage(10); //Calls back to health manager. 
         CharacterManager.instance.SwitchYikes();
         hurtSFX.Play();
+
+        if (ModeManager.isPracticeMode)
+        {
+            HealthManager.instance.TakeDamage(0); //Calls back to health manager.    
+        }
+        else
+        {
+            HealthManager.instance.TakeDamage(10);
+        }
+       
         
         if (changeSpriteRoutine != null)
         {

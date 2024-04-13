@@ -988,6 +988,7 @@ MonoBehaviour:
   - Title
   - Instructions
   - Credits
+  - Modes
   buttonClickSFX: {fileID: 843818469}
 --- !u!4 &1753007565
 Transform:
