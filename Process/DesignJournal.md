@@ -6,19 +6,23 @@ I noticed that my presentation probably wasn't elaborate enough since there were
 One thing I know I should have included was a small gameplay in the powerpoint (either a video or a GIF) to give a better idea for those who have never seen the game. 
 
 ### Feedback
-- Generally, everyone have said that the game is really difficult to play. I have received comments that combining colors "take a lot of brain power" Ahah...
+- Generally, everyone has said that the game is really difficult to play because there was a huge learning curve for those who knew nothing about color theory. They say that "combining colors take a lot of brain power" Ahah...
   - I think maybe the instructions could be improved? (Like an explanation to why yellow and red make yellow. Maybe a color wheel could help?)
-  - An interactive tutorial might also be good for the player's learning curve.
-  - In the end, I added a toggle button to show the color combination guide for players that need to refer to it. I also added a survival and practice mode for those who wanted to get used to color mixing (without taking damage) before taking on the actual challenge.
-- Some people have also mentioned that the yellow diamond UI seem to draw in a lot of attention and they get mixed up with what colors they currently have in hand. 
-  - So I have put 2 more bigger diamonds that tracks which colors the player currently have. (Personally, it took me some time to get used to since it felt like there were more colors to look take in mentally.) 
+  - An interactive tutorial might also be good for the player's learning curve. (Maybe add a third mode for the tutorial with guiding texts to show which keys to press. A neutral music looping in the BG may be useful in this scenario with instructions that changes based on when the player has changed to correct keys and hit the notes.) This might take longer to create but worth the experience.
+  - For the final prototype, I added a toggle button to show the color combination guide for players that need to refer to it. I also added a survival mode and a practice mode for those who wanted to get used to color mixing (without taking damage) before taking on the actual challenge.
+
+![Screenshot of color guide](images/Prototype5.png)
+![Screenshot of color guide](images/Prototype5.1.png)
+
+- Some people have also mentioned that the yellow diamond UI seem to draw in a lot of attention and they get mixed up with what colors they currently have. 
+  - So I have put 2 more bigger diamonds that tracks which colors the player has control over. (Personally, it took me some time to get used to since it felt like there were more colors to take in mentally.) 
 - Feel:
   - People have mentioned that they key controls can be a bit uncomfortable because of how close they are too each other (F and G). I agree that not everyone has the same hand and keyboard sizes, so I moved the GH keys to JK for more breathing room. 
 
 ### Closing Thoughts
-Overall I had more fun than I thought I would since I didn't have a good experience learning coding in the past. I do think that the Unity interface aided a lot in my learning curve. (I also discovered that developing small games can be a really fun exercise! Though I do need to get some physical exercise...) 
+Overall I had more fun than I thought I would since I didn't have a good experience learning to code in the past. I do think that the Unity interface aided a lot in my learning curve. (I also discovered that developing small games can be a really fun exercise! Though I do need to get some physical exercise...) 
 
-I hope to continue polishing this game in the future. For example, exploring some more (2D VFX) animations would be really nice.
+I hope to continue polishing this game in the future. For example, exploring some more (2D VFX) animations would be really nice to make the game feel better. 
 ___
 # Design Journal: Prototyping Stage 4
 April 4, 2024
