@@ -2,25 +2,39 @@
 April 12 - 17, 2024
 
 ### Presentation
-I noticed that my presentation probably wasn't elaborate enough since there were some people who were confused with how my game mechanics worked. <br>
+After pitching my project to the class, I noticed that I probably wasn't elaborate enough since there were some people who were confused with how my game mechanics worked. <br>
 One thing I know I should have included was a small gameplay in the powerpoint (either a video or a GIF) to give a better idea for those who have never seen the game. 
 
 ### Feedback
-- Generally, everyone has said that the game is really difficult to play because there was a huge learning curve for those who knew nothing about color theory. They say that "combining colors take a lot of brain power" Ahah...
-  - I think maybe the instructions could be improved? (Like an explanation to why yellow and red make yellow. Maybe a color wheel could help?)
-  - An interactive tutorial might also be good for the player's learning curve. (Maybe add a third mode for the tutorial with guiding texts to show which keys to press. A neutral music looping in the BG may be useful in this scenario with instructions that changes based on when the player has changed to correct keys and hit the notes.) This might take longer to create but worth the experience.
-  - For the final prototype, I added a toggle button to show the color combination guide for players that need to refer to it. I also added a survival mode and a practice mode for those who wanted to get used to color mixing (without taking damage) before taking on the actual challenge.
+- Generally, everyone has said that the game is really difficult to play because there was a huge learning curve for those who knew nothing about color theory. They said that "combining colors took a lot of brain power" Ahah...
+  - I think maybe the instructions could be improved? (For example, perhaps a color wheel or some other visual to present the color relation could be a better explanation to why yellow and red make orange.)
+  - An interactive tutorial might also improve the player's learning curve. (Maybe add a third mode for the tutorial with guiding texts to show which keys to press. In addition, having music looping in the background may be useful in this scenario, with instructions that evolve based on when the player has changed to the correct keys and when they've hit the notes.) This might take longer to create but worth the experience. 
+
+> Implementation:
+>
+> For the final prototype, I added a toggle button to show the color combination guide for players that needed to refer to it. I also added a survival mode and a practice mode for those who wanted to get used to color mixing (without taking damage) before taking on the actual challenge.
 
 ![Screenshot of color guide](images/Prototype5.png)
-![Screenshot of color guide](images/Prototype5.1.png)
+![Screenshot of mode selection menu](images/Prototype5.1.png)
 
-- Some people have also mentioned that the yellow diamond UI seem to draw in a lot of attention and they get mixed up with what colors they currently have. 
-  - So I have put 2 more bigger diamonds that tracks which colors the player has control over. (Personally, it took me some time to get used to since it felt like there were more colors to take in mentally.) 
+- Another point is that the yellow diamond UI seem to draw in a lot of attention, which a few people tend to get mixed up with which colors they currently have. 
+
+> Implementation:
+>
+> I added 2 more larger diamonds that tracks which colors the player has control over (in addition to the 2 smaller ones that show the switch color, like a weapon system). Personally, it took me some getting used to since I felt like there were more colors to process mentally.
+
+![Screenshot UI difference](images/Prototype5.3.png)
 - Feel:
-  - People have mentioned that they key controls can be a bit uncomfortable because of how close they are too each other (F and G). I agree that not everyone has the same hand and keyboard sizes, so I moved the GH keys to JK for more breathing room. 
+  - People have also mentioned that they key controls can be a bit uncomfortable because of how close they are to each other (F and G). 
+
+> Implementation:
+>
+> I agree that not everyone has the same hand and keyboard sizes, so I moved the GH keys to JK for more breathing room.
+
+![Screenshot keys](images/Prototype5.2.png)
 
 ### Closing Thoughts
-Overall I had more fun than I thought I would since I didn't have a good experience learning to code in the past. I do think that the Unity interface aided a lot in my learning curve. (I also discovered that developing small games can be a really fun exercise! Though I do need to get some physical exercise...) 
+Overall I had more fun than I thought I would since I didn't have a good learning experience with code in the past. I do think that the Unity interface aided a lot in my learning curve though. (I also discovered that developing small games can be a really fun exercise!) 
 
 I hope to continue polishing this game in the future. For example, exploring some more (2D VFX) animations would be really nice to make the game feel better. 
 ___
@@ -46,8 +60,8 @@ The health system is still being implemented in the game (delayed due to power o
 
 ### Next Steps
 - [x] Finish implementing the lives.
-- > Game Over screen
-- > Add Title screen + Restart/ Replay
+- [x] Game Over screen
+- [x] Add Title screen + Restart/ Replay
     - [ ] Pause button maybeee??? [OPTIONAL]
       - Would need to figure how to pause music and game elements.
 - [x] Draw character head + expressions sprites that react to hit accuracy. (Totally not needed but it's something I'd like to do!)
