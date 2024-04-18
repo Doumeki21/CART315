@@ -217,5 +217,5 @@ Okami was one of my favorite games on the Wii console when it first came out. It
 ![Creation of a tornado](images/Whirlwind.png)
 
 ### For Inspiration...
-- To incorporate some of these ideas in my future projects, I'd like to consider variety in gameplay. For example, I could match different actions to each of their corresponding opponents' colors or introduce different characters that have different playing styles. (If I do have time, I'd like to think a bit more about the choice of visual narrative as well.)
+- To incorporate some of these ideas in my future projects, I'd like to consider variety in gameplay. For example, I could match different actions to each of their corresponding opponents' colors or introduce different characters that have different playing styles. (If I do have time, I'd like to think a bit more about the choice of visual narrative as well and generally explore new ways of playing games.)
 
